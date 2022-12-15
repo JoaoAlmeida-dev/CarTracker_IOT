@@ -35,7 +35,9 @@
             "2f51886ad7147166"
         ],
         "x": 54,
-        "y": 339
+        "y": 339,
+        "w": 512,
+        "h": 122
     },
     {
         "id": "6fbc52b23e464251",
@@ -65,7 +67,9 @@
             "79fe4da0556f103a"
         ],
         "x": 54,
-        "y": 19
+        "y": 19,
+        "w": 912,
+        "h": 302
     },
     {
         "id": "e3ed3dde474ba497",
@@ -1530,7 +1534,7 @@
         "type": "function",
         "z": "f9294724958d27a2",
         "name": "select *",
-        "func": "\nmsg.topic = \"SELECT * FROM gps ORDER BY id DESC ;\"\nreturn msg;",
+        "func": "\nmsg.topic = \"SELECT * FROM gps ORDER BY id ASC ;\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1634,7 +1638,7 @@
         "name": "",
         "depth": "10",
         "layer": "combined",
-        "smooth": false,
+        "smooth": true,
         "x": 1150,
         "y": 880,
         "wires": [
@@ -1683,7 +1687,7 @@
         "type": "function",
         "z": "f9294724958d27a2",
         "name": "function 5",
-        "func": "\nvar arr = msg.payload\n\nfor (var i = 0; i < arr.length ; i++) {\n    arr[\"icon\"]=\"male\";\n    arr[\"name\"] = \"test\";\n    arr[\"color\"] = \"#000\";\n}\n\narr.slice(Math.max(arr.length - 10, 0))\nmsg.payload = arr;\nreturn msg;",
+        "func": "\nvar arr = msg.payload\n\nfor (var i = 0; i < arr.length; i++) {\n    arr[i] = {\n        lat: arr[i][\"lat\"],\n        lon: arr[i][\"lon\"],\n        name: \"test\",\n        icon: \"male\",\n        color: \"#000\",\n    }\n    \n    if (i< arr.length-10){\n        arr[i][\"deleted\"]=false;    \n    }\n}\n\narr.slice(Math.max(arr.length - 10, 0))\nmsg.payload = arr;\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1695,34 +1699,6 @@
             [
                 "c4cacbe936455ee0",
                 "49e093c9a89b35de"
-            ]
-        ]
-    },
-    {
-        "id": "4829e0c6eca1790d",
-        "type": "ui_button",
-        "z": "f9294724958d27a2",
-        "name": "",
-        "group": "ab6f9b75.0d4718",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Inject random Data Map",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 170,
-        "y": 360,
-        "wires": [
-            [
-                "b16eccc275aba8c5"
             ]
         ]
     },
