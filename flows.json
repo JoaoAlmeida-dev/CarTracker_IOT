@@ -1534,7 +1534,7 @@
         "type": "function",
         "z": "f9294724958d27a2",
         "name": "select *",
-        "func": "\nmsg.topic = \"SELECT * FROM gps ORDER BY id ASC ;\"\nreturn msg;",
+        "func": "\nmsg.topic = \"SELECT * FROM gps ORDER BY id DESC ;\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1687,7 +1687,7 @@
         "type": "function",
         "z": "f9294724958d27a2",
         "name": "function 5",
-        "func": "\nvar arr = msg.payload\n\nfor (var i = 0; i < arr.length; i++) {\n    arr[i] = {\n        lat: arr[i][\"lat\"],\n        lon: arr[i][\"lon\"],\n        name: \"test\",\n        icon: \"male\",\n        color: \"#000\",\n    }\n    \n    if (i< arr.length-10){\n        arr[i][\"deleted\"]=false;    \n    }\n}\n\narr.slice(Math.max(arr.length - 10, 0))\nmsg.payload = arr;\nreturn msg;\n\n\n",
+        "func": "\nvar arr = msg.payload\n\nfor (var i = 0; i < arr.length; i++) {\n    arr[i] = {\n        lat: arr[i][\"lat\"],\n        lon: arr[i][\"lon\"],\n        name: \"test\",\n        icon: \"male\",\n        color: \"#000\",\n    }\n    \n    if (arr.length > 10 && i< 10){\n        arr[i][\"deleted\"]=false;    \n    }else{\n        arr[i][\"deleted\"] = true;\n\n    }\n}\n\narr.slice(Math.max(arr.length - 10, 0))\nmsg.payload = arr;\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1718,6 +1718,35 @@
         "x": 1290,
         "y": 820,
         "wires": []
+    },
+    {
+        "id": "84c8e5ab14a9333f",
+        "type": "inject",
+        "z": "f9294724958d27a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "b16eccc275aba8c5"
+            ]
+        ]
     },
     {
         "id": "c8e50233bb77ad49",
