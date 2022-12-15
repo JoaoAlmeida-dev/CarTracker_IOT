@@ -1,0 +1,5 @@
+node-red-contrib-aedes
+node-red-contrib-web-worldmap
+node-red-dashboard
+node-red-node-email
+node-red-node-sqlite
