@@ -35,7 +35,9 @@
             "2f51886ad7147166"
         ],
         "x": 54,
-        "y": 339
+        "y": 339,
+        "w": 512,
+        "h": 122
     },
     {
         "id": "6fbc52b23e464251",
@@ -65,7 +67,9 @@
             "79fe4da0556f103a"
         ],
         "x": 54,
-        "y": 19
+        "y": 19,
+        "w": 912,
+        "h": 302
     },
     {
         "id": "e3ed3dde474ba497",
@@ -321,7 +325,7 @@
     {
         "id": "1d039f1066253cac",
         "type": "mqtt-broker",
-        "name": "ttn",
+        "name": "TheThingsNetwork-Broker",
         "broker": "eu1.cloud.thethings.network",
         "port": "1883",
         "clientid": "lic-lab-2@ttn",
@@ -454,21 +458,12 @@
         "type": "ui_group",
         "z": "72de9661af2c534c",
         "name": "Map",
-        "tab": "b34078e6.e60df8",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "b34078e6.e60df8",
-        "type": "ui_tab",
-        "z": "72de9661af2c534c",
-        "name": "Map",
-        "icon": "map",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "27fcbb909749d0aa",
@@ -517,6 +512,25 @@
         "order": 6,
         "disp": true,
         "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7bbfa01ef143c38b",
+        "type": "ui_tab",
+        "name": "Downlink",
+        "icon": "network",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "380d012672404e5d",
+        "type": "ui_group",
+        "name": "Downlink",
+        "tab": "7bbfa01ef143c38b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
         "collapse": false,
         "className": ""
     },
@@ -2134,5 +2148,173 @@
                 "42f0d88de020f203"
             ]
         ]
+    },
+    {
+        "id": "afa10f32099e0e54",
+        "type": "function",
+        "z": "72de9661af2c534c",
+        "name": "function 6",
+        "func": "\nreturn {\n    \"payload\": {\n        \"downlinks\": [{\n            \"f_port\": 15,\n            \"frm_payload\": msg.payload.toString(\"base64\"),\n            \"priority\": \"NORMAL\"\n        }]\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 540,
+        "wires": [
+            [
+                "ac2c61949fe2b733",
+                "ee9067c386c4bfb4"
+            ]
+        ]
+    },
+    {
+        "id": "ac2c61949fe2b733",
+        "type": "mqtt out",
+        "z": "72de9661af2c534c",
+        "name": "",
+        "topic": "v3/lic-lab-2/devices/eui-a8610a34323b8708/down/push",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1d039f1066253cac",
+        "x": 640,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4435d4aa8570e53f",
+        "type": "inject",
+        "z": "72de9661af2c534c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[0,42,255,0]",
+        "payloadType": "bin",
+        "x": 110,
+        "y": 500,
+        "wires": [
+            [
+                "afa10f32099e0e54"
+            ]
+        ]
+    },
+    {
+        "id": "1ec74bc22b025340",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "name": "",
+        "group": "380d012672404e5d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Send downlink",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "send",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 560,
+        "wires": [
+            [
+                "afa10f32099e0e54"
+            ]
+        ]
+    },
+    {
+        "id": "ee9067c386c4bfb4",
+        "type": "debug",
+        "z": "72de9661af2c534c",
+        "name": "downlink_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "ce25c49d34182e0d",
+        "type": "mqtt in",
+        "z": "72de9661af2c534c",
+        "name": "",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1d039f1066253cac",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 740,
+        "wires": [
+            [
+                "5a67480fcc218f54",
+                "2d28304a2c53814c"
+            ]
+        ]
+    },
+    {
+        "id": "5a67480fcc218f54",
+        "type": "debug",
+        "z": "72de9661af2c534c",
+        "name": "msg",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 270,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "2d28304a2c53814c",
+        "type": "debug",
+        "z": "72de9661af2c534c",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 780,
+        "wires": []
     }
 ]

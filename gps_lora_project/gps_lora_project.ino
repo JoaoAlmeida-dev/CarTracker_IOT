@@ -20,18 +20,13 @@ String appKey = SECRET_APP_KEY;
 
 void setup()
 {
-  // Start the Arduino hardware serial port at 9600 baud
-  //Serial.begin(9600);
   setupGps();
-  //setupLora();
-  // Start the software serial port at the GPS's default baud
-  //gpsSerial.begin(GPSBaud);
+  setupLora();
 }
 
 void loop()
 {
   readGps();
-  //loopLora();
   delay(1000);
 }
 
@@ -51,9 +46,6 @@ void readGps(){
       displayInfo();
       if(gpsMessage.length() > 0)
       {
-      //   Serial.print("Sending Gps message by Lora: ");
-      //   Serial.println(gpsMessage);
-
         Serial.print("Sending: " + gpsMessage + " - ");
         for (unsigned int i = 0; i < gpsMessage.length(); i++) {
           Serial.print(gpsMessage[i] >> 4, HEX);
@@ -63,13 +55,11 @@ void readGps(){
         Serial.println("");
 
 
-        //sendLoraMsg(gpsMessage);
-        delay(0*1000 + 100);
+        sendLoraMsg(gpsMessage);
+        delay(60*1000 + 0);
 
       }
     }
-    //Serial.println(incomingByte, DEC);
-    //gps.encode(readString)
   }
   Serial.println("\nFinished receive");
   
@@ -78,7 +68,6 @@ void readGps(){
   if (millis() > 5000 && gps.charsProcessed() < 10)
   {
     Serial.println("No GPS detected");
-    
   }  
 }
 
