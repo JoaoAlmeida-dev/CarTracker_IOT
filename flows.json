@@ -35,9 +35,7 @@
             "2f51886ad7147166"
         ],
         "x": 54,
-        "y": 339,
-        "w": 512,
-        "h": 122
+        "y": 279
     },
     {
         "id": "6fbc52b23e464251",
@@ -58,18 +56,12 @@
             "5493965840a5e96c",
             "e60a0f3d7f911533",
             "a722ab9ab6ff5dcc",
-            "276e7daffd5a178f",
             "d604e89466f0822b",
             "74598766ed2fc183",
-            "328df9c6d288c8a9",
-            "bf153d2d691d17f1",
-            "5c6c2875a41edfbe",
-            "79fe4da0556f103a"
+            "328df9c6d288c8a9"
         ],
         "x": 54,
-        "y": 19,
-        "w": 912,
-        "h": 302
+        "y": 19
     },
     {
         "id": "e3ed3dde474ba497",
@@ -117,7 +109,7 @@
             "9447936b808e2358"
         ],
         "x": 654,
-        "y": 39,
+        "y": 19,
         "w": 632,
         "h": 622
     },
@@ -127,7 +119,7 @@
         "z": "f9294724958d27a2",
         "g": "e3ed3dde474ba497",
         "x": 680,
-        "y": 340,
+        "y": 320,
         "wires": [
             [
                 "14164539302939ca",
@@ -143,7 +135,7 @@
         "z": "f9294724958d27a2",
         "g": "e3ed3dde474ba497",
         "x": 920,
-        "y": 500,
+        "y": 480,
         "wires": [
             [
                 "9dd9d3232880119d",
@@ -156,8 +148,8 @@
         "id": "2b8607d1ea785069",
         "type": "junction",
         "z": "f9294724958d27a2",
-        "x": 560,
-        "y": 340,
+        "x": 580,
+        "y": 400,
         "wires": [
             [
                 "1e7a68680bfdfe6f",
@@ -547,8 +539,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 490,
-        "y": 100,
+        "x": 110,
+        "y": 60,
         "wires": [
             []
         ]
@@ -561,8 +553,8 @@
         "property": "payload",
         "action": "",
         "pretty": true,
-        "x": 290,
-        "y": 160,
+        "x": 310,
+        "y": 120,
         "wires": [
             [
                 "17b5ec609693ad48",
@@ -584,7 +576,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 470,
-        "y": 200,
+        "y": 60,
         "wires": []
     },
     {
@@ -634,7 +626,7 @@
         "to": "",
         "reg": false,
         "x": 830,
-        "y": 500,
+        "y": 480,
         "wires": [
             [
                 "a3cadc1cc2e135c2",
@@ -664,7 +656,7 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
                 "6da246af9acb20c0"
@@ -693,7 +685,7 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 500,
+        "y": 480,
         "wires": [
             [
                 "4a839169870a3e66"
@@ -722,7 +714,7 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 540,
+        "y": 520,
         "wires": [
             [
                 "15518e7aec763a0e"
@@ -751,7 +743,7 @@
         "to": "",
         "reg": false,
         "x": 850,
-        "y": 340,
+        "y": 320,
         "wires": [
             [
                 "37583a02f4f0c4b1",
@@ -783,7 +775,7 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 280,
+        "y": 260,
         "wires": [
             [
                 "ac840f86b80aeee1"
@@ -812,7 +804,7 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 320,
+        "y": 300,
         "wires": [
             [
                 "09afe1cdf614df57"
@@ -841,7 +833,7 @@
         "to": "",
         "reg": false,
         "x": 1020,
-        "y": 360,
+        "y": 340,
         "wires": [
             [
                 "9f50efc2f24b65e6"
@@ -870,7 +862,7 @@
         "to": "",
         "reg": false,
         "x": 1030,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "0122aab523077d07"
@@ -899,7 +891,7 @@
         "to": "",
         "reg": false,
         "x": 840,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
                 "f73d3b50fd13c0c9",
@@ -931,7 +923,7 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 140,
+        "y": 120,
         "wires": [
             [
                 "85fa37e6bf61cb55"
@@ -960,7 +952,7 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
                 "3510f457ad87a37e"
@@ -989,7 +981,7 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
                 "fa41d8ebd2379c2f"
@@ -1018,7 +1010,7 @@
         "to": "",
         "reg": false,
         "x": 840,
-        "y": 620,
+        "y": 600,
         "wires": [
             [
                 "c266697bb3b1103c"
@@ -1050,7 +1042,7 @@
         "seg2": "",
         "className": "",
         "x": 1180,
-        "y": 140,
+        "y": 120,
         "wires": []
     },
     {
@@ -1078,7 +1070,7 @@
         "seg2": "",
         "className": "",
         "x": 1180,
-        "y": 180,
+        "y": 160,
         "wires": []
     },
     {
@@ -1106,7 +1098,7 @@
         "seg2": "",
         "className": "",
         "x": 1180,
-        "y": 220,
+        "y": 200,
         "wires": []
     },
     {
@@ -1134,7 +1126,7 @@
         "seg2": "",
         "className": "",
         "x": 1170,
-        "y": 320,
+        "y": 300,
         "wires": []
     },
     {
@@ -1162,7 +1154,7 @@
         "seg2": "",
         "className": "",
         "x": 990,
-        "y": 620,
+        "y": 600,
         "wires": []
     },
     {
@@ -1205,7 +1197,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1170,
-        "y": 460,
+        "y": 440,
         "wires": []
     },
     {
@@ -1223,7 +1215,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1170,
-        "y": 540,
+        "y": 520,
         "wires": []
     },
     {
@@ -1241,7 +1233,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1170,
-        "y": 500,
+        "y": 480,
         "wires": []
     },
     {
@@ -1269,7 +1261,7 @@
         "seg2": "",
         "className": "",
         "x": 1170,
-        "y": 280,
+        "y": 260,
         "wires": []
     },
     {
@@ -1297,7 +1289,7 @@
         "seg2": "",
         "className": "",
         "x": 1180,
-        "y": 360,
+        "y": 340,
         "wires": []
     },
     {
@@ -1325,7 +1317,7 @@
         "seg2": "",
         "className": "",
         "x": 1190,
-        "y": 400,
+        "y": 380,
         "wires": []
     },
     {
@@ -1343,7 +1335,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 990,
-        "y": 580,
+        "y": 560,
         "wires": []
     },
     {
@@ -1376,7 +1368,7 @@
         "mapopt": "",
         "mapwms": false,
         "x": 1160,
-        "y": 80,
+        "y": 60,
         "wires": []
     },
     {
@@ -1400,7 +1392,7 @@
         "to": "",
         "reg": false,
         "x": 1000,
-        "y": 80,
+        "y": 60,
         "wires": [
             [
                 "762962cdebd005f0"
@@ -1468,7 +1460,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
+        "x": 440,
         "y": 440,
         "wires": []
     },
@@ -1760,6 +1752,29 @@
         ]
     },
     {
+        "id": "fb3a1d7f6084f5bb",
+        "type": "switch",
+        "z": "f9294724958d27a2",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "c8e50233bb77ad49",
         "type": "inject",
         "z": "72de9661af2c534c",
@@ -1781,7 +1796,7 @@
         "topic": "DROP TABLE gps",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
+        "x": 150,
         "y": 60,
         "wires": [
             [
@@ -1811,7 +1826,7 @@
         "topic": "INSERT into gps  ( lat , lon , alt ) VALUES (38.7 ,-9 ,20 )",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
+        "x": 150,
         "y": 140,
         "wires": [
             [
@@ -1828,7 +1843,7 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 430,
+        "x": 370,
         "y": 120,
         "wires": [
             [
@@ -1858,7 +1873,7 @@
         "topic": " SELECT * FROM gps;",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
+        "x": 150,
         "y": 220,
         "wires": [
             [
@@ -1888,28 +1903,11 @@
         "topic": " CREATE TABLE gps (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,lat FLOAT , lon FLOAT , alt FLOAT);",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
+        "x": 150,
         "y": 100,
         "wires": [
             [
                 "5493965840a5e96c"
-            ]
-        ]
-    },
-    {
-        "id": "276e7daffd5a178f",
-        "type": "worldmap-tracks",
-        "z": "72de9661af2c534c",
-        "g": "6fbc52b23e464251",
-        "name": "",
-        "depth": 20,
-        "layer": "combined",
-        "smooth": false,
-        "x": 750,
-        "y": 60,
-        "wires": [
-            [
-                "bf153d2d691d17f1"
             ]
         ]
     },
@@ -1935,7 +1933,7 @@
         "topic": "INSERT into gps  ( lat , lon , alt ) VALUES (39.777 ,-9.78 , 20 )",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
+        "x": 150,
         "y": 180,
         "wires": [
             [
@@ -1955,11 +1953,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
+        "x": 520,
         "y": 120,
         "wires": [
             [
-                "276e7daffd5a178f",
                 "328df9c6d288c8a9"
             ]
         ]
@@ -1977,94 +1974,9 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 760,
+        "x": 700,
         "y": 120,
         "wires": []
-    },
-    {
-        "id": "bf153d2d691d17f1",
-        "type": "ui_worldmap",
-        "z": "72de9661af2c534c",
-        "g": "6fbc52b23e464251",
-        "group": "cd81d08b.eebb3",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "lat": "",
-        "lon": "",
-        "zoom": "",
-        "layer": "OSMG",
-        "cluster": "",
-        "maxage": "",
-        "usermenu": "hide",
-        "layers": "hide",
-        "panit": "true",
-        "panlock": "false",
-        "zoomlock": "false",
-        "hiderightclick": "true",
-        "coords": "none",
-        "showgrid": "true",
-        "allowFileDrop": "false",
-        "path": "/worldmap",
-        "overlist": "DR,CO,RA,DN,HM",
-        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriO,EsriDG,NatGeo,UKOS,OpTop",
-        "mapname": "",
-        "mapurl": "",
-        "mapopt": "",
-        "mapwms": false,
-        "x": 880,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "5c6c2875a41edfbe",
-        "type": "ui_button",
-        "z": "72de9661af2c534c",
-        "g": "6fbc52b23e464251",
-        "name": "",
-        "group": "cd81d08b.eebb3",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Select from DB",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "fa-male",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "topicType": "str",
-        "x": 160,
-        "y": 280,
-        "wires": [
-            [
-                "79fe4da0556f103a"
-            ]
-        ]
-    },
-    {
-        "id": "79fe4da0556f103a",
-        "type": "function",
-        "z": "72de9661af2c534c",
-        "g": "6fbc52b23e464251",
-        "name": "function 3",
-        "func": "\nmsg.topic = \"SELECT * FROM gps;\"\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 280,
-        "wires": [
-            [
-                "5493965840a5e96c"
-            ]
-        ]
     },
     {
         "id": "595b2d343f19283a",
@@ -2078,7 +1990,7 @@
         "name": "",
         "dname": "",
         "x": 450,
-        "y": 380,
+        "y": 320,
         "wires": []
     },
     {
@@ -2103,7 +2015,7 @@
         "topic": "",
         "topicType": "str",
         "x": 150,
-        "y": 380,
+        "y": 320,
         "wires": [
             [
                 "2f51886ad7147166"
@@ -2125,7 +2037,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 450,
-        "y": 420,
+        "y": 360,
         "wires": []
     },
     {
@@ -2141,7 +2053,7 @@
         "finalize": "",
         "libs": [],
         "x": 300,
-        "y": 380,
+        "y": 320,
         "wires": [
             [
                 "595b2d343f19283a",
@@ -2160,8 +2072,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 280,
-        "y": 540,
+        "x": 300,
+        "y": 500,
         "wires": [
             [
                 "ac2c61949fe2b733",
@@ -2183,8 +2095,8 @@
         "correl": "",
         "expiry": "",
         "broker": "1d039f1066253cac",
-        "x": 640,
-        "y": 540,
+        "x": 660,
+        "y": 500,
         "wires": []
     },
     {
@@ -2208,8 +2120,8 @@
         "topic": "",
         "payload": "[0,42,255,0]",
         "payloadType": "bin",
-        "x": 110,
-        "y": 500,
+        "x": 130,
+        "y": 460,
         "wires": [
             [
                 "afa10f32099e0e54"
@@ -2236,8 +2148,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 120,
-        "y": 560,
+        "x": 140,
+        "y": 520,
         "wires": [
             [
                 "afa10f32099e0e54"
@@ -2257,8 +2169,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
-        "y": 600,
+        "x": 480,
+        "y": 560,
         "wires": []
     },
     {
@@ -2274,8 +2186,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 110,
-        "y": 740,
+        "x": 130,
+        "y": 700,
         "wires": [
             [
                 "5a67480fcc218f54",
@@ -2296,8 +2208,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 270,
-        "y": 700,
+        "x": 290,
+        "y": 660,
         "wires": []
     },
     {
@@ -2313,8 +2225,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 290,
-        "y": 780,
+        "x": 310,
+        "y": 740,
         "wires": []
     }
 ]
