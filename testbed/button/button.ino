@@ -1,27 +1,27 @@
 // constants won't change. They're used here to set pin numbers:
-const byte buttonPin = 2; // the number of the pushbutton pin
-const byte buzzpin = 13;  // the number of the LED pin
+constexpr uint8_t BUTTON_PIN = 2; // the number of the pushbutton pin
+constexpr uint8_t BUZZ_PIN = 13;  // the number of the buzzer pin
 
 // variables will change:
-byte newButton = 0; // variable for reading the pushbutton status
-byte oldButton = 0;
-byte ledState = 0;
+uint8_t newButton = 0; // variable for reading the pushbutton status
+uint8_t oldButton = 0;
+uint8_t ledState = 0;
 
 void setup()
 {
     // initialize the LED pin as an output:
     // pinMode(buzzpin, OUTPUT);
     // initialize the pushbutton pin as an input:
-    pinMode(buttonPin, INPUT_PULLUP);
+    pinMode(BUTTON_PIN, INPUT_PULLUP);
     pinMode(LED_BUILTIN, OUTPUT);
     digitalWrite(LED_BUILTIN, LOW);
-    Serial.print("setup done");
+    Serial.print("Button setup done");
 }
 
 void loop()
 {
     // read the state of the pushbutton value:
-    newButton = digitalRead(buttonPin);
+    newButton = digitalRead(BUTTON_PIN);
 
     Serial.print("newButton: ");
     Serial.print(newButton);
@@ -41,14 +41,14 @@ void loop()
         {
             // ON
             //tone(buzzpin, 2750);
-            Serial.println("turned on");
+            Serial.println("BUTTON turned on");
             digitalWrite(LED_BUILTIN, HIGH);
             ledState = 1;
         }
         else
         {
             // OFF
-            Serial.println("turned off");
+            Serial.println("BUTTON turned off");
             digitalWrite(LED_BUILTIN, LOW);
             ledState = 0;
         }

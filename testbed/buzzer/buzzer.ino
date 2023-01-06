@@ -163,7 +163,12 @@ void setup() {
 
     // we only play the note for 90% of the duration, leaving 10% as a pause
     tone(buzzer, melody[thisNote], noteDuration*0.9);
-
+    Serial.print("buzzer:");
+    Serial.print(buzzer);
+    Serial.print("melody[thisNote]: ");
+    Serial.print(melody[thisNote]);
+    Serial.print("noteDuration: ");
+    Serial.print(noteDuration*0.9);
     // Wait for the specief duration before playing the next note.
     delay(noteDuration);
     
