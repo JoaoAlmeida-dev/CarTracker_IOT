@@ -9,7 +9,7 @@ constexpr int PRECISION = 10;
 void gps_setup()
 {
   Serial1.begin(9600);
-  Serial.println("Setup gps done");
+  debugln("Setup gps done");
 }
 
 void gps_read(){
@@ -21,13 +21,15 @@ void gps_read(){
       gps_display_info();
       if(gpsMessage.length() > 0)
       {
-        Serial.print("Sending: " + gpsMessage + " - ");
+        debug("Sending: " + gpsMessage + " - ");
         for (unsigned int i = 0; i < gpsMessage.length(); i++) {
-          Serial.print(gpsMessage[i] >> 4, HEX);
-          Serial.print(gpsMessage[i] & 0xF, HEX);
-          Serial.print(" ");
+          #if DEBUG
+            Serial.print(gpsMessage[i] >> 4, HEX);
+            Serial.print(gpsMessage[i] & 0xF, HEX);
+            Serial.println(" ");
+          #endif
         }
-        Serial.println("");
+        debugln("");
 
 
         lora_send_msg(gpsMessage);
@@ -36,13 +38,13 @@ void gps_read(){
       }
     }
   }
-  Serial.println("\nFinished receive");
+  debugln("\nFinished receive");
   
   // If 5000 milliseconds pass and there are no characters coming in
   // over the software serial port, show a "No GPS detected" error
   if (millis() > 5000 && gps.charsProcessed() < 10)
   {
-    Serial.println("No GPS detected");
+    debugln("No GPS detected");
   }  
 }
 
@@ -188,53 +190,55 @@ String gps_info(){
 
 void gps_display_info()
 {
-  Serial.print("N Satelites: ");
-  Serial.println(gps.satellites.value());
+  debug("N Satelites: ");
+  debugln(gps.satellites.value());
   if (gps.location.isValid())
   {
-    Serial.print("Latitude: ");
-    Serial.println(gps.location.lat(), 6);
-    Serial.print("Longitude: ");
-    Serial.println(gps.location.lng(), 6);
-    Serial.print("Altitude: ");
-    Serial.println(gps.altitude.meters());
+    #if DEBUG
+      debug("Latitude: ");
+      Serial.println(gps.location.lat(), 6);
+      debug("Longitude: ");
+      Serial.println(gps.location.lng(), 6);
+      debug("Altitude: ");
+      debugln(gps.altitude.meters());
+    #endif
   }
   else
   {
-    Serial.println("Location: Not Available");
+    debugln("Location: Not Available");
   }
   
-  Serial.print("Date: ");
+  debug("Date: ");
   if (gps.date.isValid())
   {
-    Serial.print(gps.date.month());
-    Serial.print("/");
-    Serial.print(gps.date.day());
-    Serial.print("/");
-    Serial.println(gps.date.year());
+    debug(gps.date.month());
+    debug("/");
+    debug(gps.date.day());
+    debug("/");
+    debugln(gps.date.year());
   }
   else
   {
-    Serial.println("Date Not Available");
+    debugln("Date Not Available");
   }
 
-  Serial.print("Time: ");
+  debug("Time: ");
   if (gps.time.isValid())
   {
-    if (gps.time.hour() < 10) Serial.print(F("0"));
-    Serial.print(gps.time.hour());
-    Serial.print(":");
-    if (gps.time.minute() < 10) Serial.print(F("0"));
-    Serial.print(gps.time.minute());
-    Serial.print(":");
-    if (gps.time.second() < 10) Serial.print(F("0"));
-    Serial.print(gps.time.second());
-    Serial.print(".");
-    if (gps.time.centisecond() < 10) Serial.print(F("0"));
-    Serial.println(gps.time.centisecond());
+    if (gps.time.hour() < 10) debug(F("0"));
+    debug(gps.time.hour());
+    debug(":");
+    if (gps.time.minute() < 10) debug(F("0"));
+    debug(gps.time.minute());
+    debug(":");
+    if (gps.time.second() < 10) debug(F("0"));
+    debug(gps.time.second());
+    debug(".");
+    if (gps.time.centisecond() < 10) debug(F("0"));
+    debugln(gps.time.centisecond());
   }
   else
   {
-    Serial.println("Time Not Available");
+    debugln("Time Not Available");
   }
 }

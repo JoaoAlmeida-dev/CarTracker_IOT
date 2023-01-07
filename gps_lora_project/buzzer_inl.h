@@ -1,11 +1,3 @@
-/* 
-  Imperial March - Star Wars
-  Connect a piezo buzzer or speaker to pin 11 or select a new pin.
-  More songs available at https://github.com/robsoncouto/arduino-songs                                            
-                                              
-                                              Robson Couto, 2019
-*/
-
 #define NOTE_B0  31
 #define NOTE_C1  33
 #define NOTE_CS1 35
@@ -99,10 +91,12 @@
 
 
 // change this to make the song slower or faster
-int tempo = 120;
+//defined in main file and received as argument to play method
+//int tempo = 120;
 
 // change this to whichever pin you want to use
-int buzzer = 11;
+//defined in main file and received as argument to play method
+//int buzzer = 11;
 
 // notes of the moledy followed by the duration.
 // a 4 means a quarter note, 8 an eighteenth , 16 sixteenth, so on
@@ -114,8 +108,8 @@ int melody[] = {
   // Score available at https://musescore.com/user/202909/scores/1141521
   // The tenor saxophone part was used
   
-  NOTE_A4,-4, NOTE_A4,-4, NOTE_A4,16, NOTE_A4,16, NOTE_A4,16, NOTE_A4,16, NOTE_F4,8, REST,8,
-  NOTE_A4,-4, NOTE_A4,-4, NOTE_A4,16, NOTE_A4,16, NOTE_A4,16, NOTE_A4,16, NOTE_F4,8, REST,8,
+  //NOTE_A4,-4, NOTE_A4,-4, NOTE_A4,16, NOTE_A4,16, NOTE_A4,16, NOTE_A4,16, NOTE_F4,8, REST,8,
+  //NOTE_A4,-4, NOTE_A4,-4, NOTE_A4,16, NOTE_A4,16, NOTE_A4,16, NOTE_A4,16, NOTE_F4,8, REST,8,
   NOTE_A4,4, NOTE_A4,4, NOTE_A4,4, NOTE_F4,-8, NOTE_C5,16,
 
   NOTE_A4,4, NOTE_F4,-8, NOTE_C5,16, NOTE_A4,2,//4
@@ -128,24 +122,25 @@ int melody[] = {
   NOTE_C5,16, NOTE_B4,16, NOTE_C5,16, REST,8, NOTE_F4,8, NOTE_GS4,4, NOTE_F4,-8, NOTE_A4,-16,//9
   NOTE_C5,4, NOTE_A4,-8, NOTE_C5,16, NOTE_E5,2,
 
-  NOTE_A5,4, NOTE_A4,-8, NOTE_A4,16, NOTE_A5,4, NOTE_GS5,-8, NOTE_G5,16, //7 
-  NOTE_DS5,16, NOTE_D5,16, NOTE_DS5,8, REST,8, NOTE_A4,8, NOTE_DS5,4, NOTE_D5,-8, NOTE_CS5,16,
+  //NOTE_A5,4, NOTE_A4,-8, NOTE_A4,16, NOTE_A5,4, NOTE_GS5,-8, NOTE_G5,16, //7 
+  //NOTE_DS5,16, NOTE_D5,16, NOTE_DS5,8, REST,8, NOTE_A4,8, NOTE_DS5,4, NOTE_D5,-8, NOTE_CS5,16,
 
-  NOTE_C5,16, NOTE_B4,16, NOTE_C5,16, REST,8, NOTE_F4,8, NOTE_GS4,4, NOTE_F4,-8, NOTE_A4,-16,//9
-  NOTE_A4,4, NOTE_F4,-8, NOTE_C5,16, NOTE_A4,2,
+  //NOTE_C5,16, NOTE_B4,16, NOTE_C5,16, REST,8, NOTE_F4,8, NOTE_GS4,4, NOTE_F4,-8, NOTE_A4,-16,//9
+  //NOTE_A4,4, NOTE_F4,-8, NOTE_C5,16, NOTE_A4,2,
   
 };
 
-// sizeof gives the number of bytes, each int value is composed of two bytes (16 bits)
-// there are two values per note (pitch and duration), so for each note there are four bytes
-int notes = sizeof(melody) / sizeof(melody[0]) / 2;
 
-// this calculates the duration of a whole note in ms
-int wholenote = (60000 * 4) / tempo;
+void buzzer_play(int buzzer_pin, int tempo) {
+  
+  // sizeof gives the number of bytes, each int value is composed of two bytes (16 bits)
+  // there are two values per note (pitch and duration), so for each note there are four bytes
+  int notes = sizeof(melody) / sizeof(melody[0]) / 2;
 
-int divider = 0, noteDuration = 0;
-
-void setup() {
+  // this calculates the duration of a whole note in ms
+  int wholenote = (60000 * 4) / tempo;
+  int divider = 0, noteDuration = 0;
+  
   // iterate over the notes of the melody. 
   // Remember, the array is twice the number of notes (notes + durations)
   digitalWrite(buzzer_pin, LOW);
@@ -163,22 +158,21 @@ void setup() {
     }
 
     // we only play the note for 90% of the duration, leaving 10% as a pause
-    tone(buzzer, melody[thisNote], noteDuration*0.9);
-    Serial.print("buzzer:");
-    Serial.print(buzzer);
-    Serial.print("melody[thisNote]: ");
-    Serial.print(melody[thisNote]);
-    Serial.print("noteDuration: ");
-    Serial.print(noteDuration*0.9);
+    tone(buzzer_pin, melody[thisNote], noteDuration*0.9);
+    debug("buzzer_pin:");
+    debug(buzzer_pin);
+    debug("; thisNote: ");
+    debug(melody[thisNote]);
+    debug("; noteDuration: ");
+    debugln(noteDuration*0.9);
     // Wait for the specief duration before playing the next note.
     delay(noteDuration);
     
     // stop the waveform generation before the next note.
-    noTone(buzzer);
+    noTone(buzzer_pin);
+    
   }
   digitalWrite(buzzer_pin, HIGH);
 }
 
-void loop() {
-  // no need to repeat the melody.
-}
+
