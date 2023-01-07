@@ -119,7 +119,13 @@ void loop() {
     float xyHeadingDegrees = xyHeading * 180 / M_PI;
     float zxHeadingDegrees = zxHeading * 180 / M_PI;
 
-    Serial.print("Heading: ");
+    Serial.print("Value_offset.x: ");
+    Serial.print(value_offset.x);
+    Serial.print("; Value_offset.y: ");
+    Serial.print(value_offset.y);
+    Serial.print("; Value_offset.z: ");
+    Serial.print(value_offset.z);
+    Serial.print("; Heading: ");
     Serial.println(headingDegrees);
 
     delay(100);

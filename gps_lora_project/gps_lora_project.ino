@@ -1,5 +1,6 @@
 #include "gps.h"
 #include "lora.h"
+#include "axis.h"
 
 // constants won't change. They're used here to set pin numbers:
 constexpr uint8_t BUTTON_PIN = 2; // the number of the pushbutton pin
@@ -16,6 +17,7 @@ void setup()
   //gps_setup();
   //lora_setup();
   button_setup();
+  axis_setup();
 }
 
 void loop()
@@ -25,12 +27,14 @@ void loop()
   {
     Serial.println("GPS state");
     //gps_read();
+    delay(1000);
   }
   else
   {
     Serial.println("Gyro state");
+    axis_loop();
+    delay(100);
   }
-  delay(1000);
 }
 
 inline void button_update_state(){
@@ -68,3 +72,4 @@ inline void button_setup()
 
 #include "gps_inl.h"
 #include "lora_inl.h"
+#include "axis_inl.h"
