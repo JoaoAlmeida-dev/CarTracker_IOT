@@ -115,7 +115,6 @@ inline void button_update_state(){
     if (!appState)
     {
       // ON
-      // tone(buzzpin, 2750);
       debugln("BUTTON turned on");
       digitalWrite(LED_BUILTIN, HIGH);
     }

@@ -34,47 +34,6 @@ void gps_read() {
   }
 }
 
-// Sending Gps message by Lora: {"location": {"lat":38.70,"lng":-9.20,"alt":0.00},"date": {"day":22,"month":11,"year":2022},"time": {"hour":16,"minute":10,"second":3,"centisecond":0},}
-/*
-N Satelites: 0
-Latitude: 38.704510
-Longitude: -9.202282
-Altitude: 78.20
-Date: 11/22/2022
-Time: 16:56:05.00
-Sending Gps message by Lora: {"satelites":0,"location": {"lat":38.70,"lng":-9.20,"alt":78.20},"date": {"day":22,"month":11,"year":2022},"time": {"hour":16,"minute":56,"second":5,"centisecond":0},}
-
-*/
-/*
-  {
-   "location":{
-      "lat":10,
-      "lng":13,
-      "alt":20
-   },
-   "date":{
-      "month":3,
-      "day":1,
-      "year":2000
-   },
-   "time":{
-      "hour":19,
-      "minute":30,
-      "second":35
-   }
-  }
-
-function Decoder(bytes) {
-  var result = "";
-  for (var i = 0; i < bytes.length; i++) {
-    result += String.fromCharCode(parseInt(bytes[i]));
-  }
-  
-  //return { var1: result };
-  return JSON.parse(result);
-}
-
-  */
 String gps_info() {
   String message = "";
   String json = "";
@@ -120,54 +79,6 @@ String gps_info() {
 
     message.concat(json);
   }
-
-//   if (gps.date.isValid()) {
-//     if (message.length() == 0) {
-//       message.concat("{");
-//     } else {
-//       message.concat(",");
-//     }
-//     /*
-//     json = "\"date\": ";
-//     json.concat("{\"day\":");
-//     json.concat(gps.date.day());
-//     json.concat(",\"month\":");
-//     json.concat(gps.date.month());
-//     json.concat(",\"year\":");
-//     json.concat(gps.date.year());
-//     json.concat("}");
-// */
-//     json = "\"d\": ";
-//     json.concat(gps.date.value());
-//     json.concat("");
-//     message.concat(json);
-//   }
-
-//   if (gps.time.isValid()) {
-//     if (message.length() == 0) {
-//       message.concat("{");
-//     } else {
-//       message.concat(",");
-//     }
-
-//     /*
-//     json = "\"time\": {";
-//     json.concat("\"hour\":");
-//     json.concat(gps.time.hour());
-//     json.concat(",\"minute\":");
-//     json.concat(gps.time.minute());
-//     json.concat(",\"second\":");
-//     json.concat(gps.time.second());      
-//     json.concat(",\"centisecond\":");
-//     json.concat(gps.time.centisecond());
-//     json.concat("}");
-// */
-//     json = "\"t\": ";
-//     json.concat(gps.time.value());
-//     json.concat("");
-//   }
-// message.concat(json);
-
 
   if (message.length() > 0) {
     message.concat("}");

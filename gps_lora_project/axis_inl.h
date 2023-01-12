@@ -55,15 +55,6 @@ bool axis_loop(int movement_variation_limit ) {
   float xyHeadingDegrees = xyHeading * 180 / M_PI;
   float zxHeadingDegrees = zxHeading * 180 / M_PI;
 
-  // debug("x:");
-  // debugln(value.x);
-  // debug(",");
-  // debug("y:");
-  // debugln(value.y);
-  // debug(",");
-  // debug("z:");
-  // debugln(value.z);
-
   debug("Heading:");
   debugln(headingDegrees);
   debug(",");
