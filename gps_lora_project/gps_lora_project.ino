@@ -2,6 +2,7 @@
 #include "lora.h"
 #include "axis.h"
 #include "buzzer.h"
+#include <time.h>
 
 
 #define DEBUG 1 
@@ -18,7 +19,7 @@
 constexpr uint8_t BUTTON_PIN = 2; // the number of the pushbutton pin
 constexpr uint8_t BUZZ_PIN = 1;  // the number of the buzzer pin
 constexpr uint8_t BUZZ_TEMPO = 120;  // the number of the buzzer pin
-constexpr int ALARM_MOVEMENT_THRESHOLD = 20;
+constexpr int ALARM_MOVEMENT_THRESHOLD = 50;
 
 // variables will change:
 uint8_t newButton = 0; // variable for reading the pushbutton status
@@ -28,40 +29,81 @@ uint8_t oldButton = 0;
 // * when appState==True the app is in GPS state, it will measure current gps location and attempt to send it to backend via LoRaWan.
 // * when appState == False, the app is in security/gyroMode, the gyro sensor is activated and if any sudden movements are detected, alarm starts playing and alert message is sent via LoRaWan
 bool appState = false;
-int lastAlarm = millis();
 
+//https://www.youtube.com/watch?v=qn8SP93L3iQ
+unsigned long current_time = 0;
+unsigned long last_alarm = 0;
+unsigned long previous_time_downlink = 0;
+unsigned long previous_time_gps = 0;
+constexpr unsigned long DOWNLINK_WAITTIME = 60UL*1000UL;
+constexpr unsigned long GPS_WAITTIME = 10UL*60UL*1000UL;
+constexpr unsigned long ALARM_WAITTIME = 10000UL;
+
+inline void blink_built_in(){
+  digitalWrite(LED_BUILTIN,HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
 void setup()
 {
   // receive pins on setup methods
-  //gps_setup();
-  //lora_setup();
+  blink_built_in();
+  gps_setup();
+  blink_built_in();
   button_setup();
+  blink_built_in();
   axis_setup();
+  blink_built_in();
+  lora_setup();
+  blink_built_in();
 }
 
 void loop()
 {
+  delay(1000);
   button_update_state();
+  current_time = millis();
+  
+  if(current_time - previous_time_downlink > DOWNLINK_WAITTIME ){
+      debug("Reading downlink message from lora every ");
+      debug(DOWNLINK_WAITTIME);
+      debugln(" milliseconds");
+      previous_time_downlink = current_time;
+      lora_downlink();
+  }
+
   if (appState)
   {
-    debugln("GPS state");
-    //gps_read();
-    delay(1000);
+    //debugln("GPS state");
+    if(current_time - previous_time_gps > GPS_WAITTIME ){
+      previous_time_gps = current_time;
+      debug("Reading GPS data and sending it to Lora every ");
+      debug(GPS_WAITTIME);
+      debugln(" milliseconds");
+      gps_read();
+    }
   }
   else
   {
-    debugln("Gyro state");
-    int current_time = millis();
+    //debugln("Gyro state");
     if(axis_loop(ALARM_MOVEMENT_THRESHOLD))
     {
       debugln("***Alert***");
-      if(current_time - lastAlarm  > 1000)
+      if(current_time - last_alarm  > ALARM_WAITTIME)
       {
-        lastAlarm = current_time;
-        buzzer_play(BUZZ_PIN,BUZZ_TEMPO);
+        last_alarm = current_time;
+        
+        String alertMessage {"{\"alert\":"};
+        alertMessage.concat(true);
+        alertMessage.concat("}");
+        debug("Sending Alert message:");
+        debugln(alertMessage);
+        
+        lora_uplink(alertMessage);
+        //buzzer_play(BUZZ_PIN,BUZZ_TEMPO);
       }
     }
-    delay(200);
   }
 }
 //Directly changes the ledState variable according to if the button was pushed or not
@@ -84,16 +126,23 @@ inline void button_update_state(){
       digitalWrite(LED_BUILTIN, LOW);
     }
     appState = !appState;
+    
+    String appStateMessage {"{\"changedState\":"};
+    appStateMessage.concat(appState);
+    appStateMessage.concat("}");
+
+    lora_uplink(appStateMessage);
+    gps_read();
   }
   oldButton = newButton;
 }
 
 inline void button_setup()
 {
+  debugln("Setting up button");
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(LED_BUILTIN, LOW);
-  debug("Button setup done");
+  debugln("Button setup done");
 }
 
 #include "gps_inl.h"

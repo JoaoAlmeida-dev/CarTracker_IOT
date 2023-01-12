@@ -17,6 +17,7 @@ int previous_zxHeadingDegrees = 0;
 void axis_setup() {
 
   Serial.begin(9600);
+  debugln("Setting up 3axis");
   if (bmm.initialize() == BMM150_E_ID_NOT_CONFORM) {
     debugln("Chip ID can not read! Exiting!!");
     while (1)
@@ -25,7 +26,7 @@ void axis_setup() {
     value_offset.x = -28;
     value_offset.y = -3;
     value_offset.z = -25;
-    debugln("Initialize done!");
+    debugln("Setup 3axis done!");
   }
 }
 
@@ -82,9 +83,9 @@ bool axis_loop(int movement_variation_limit ) {
   }
   
   if (
-    abs(previous_headingDegrees - headingDegrees) > movement_variation_limit ||
-    abs(previous_xyHeadingDegrees - xyHeadingDegrees) > movement_variation_limit||
-    abs(previous_zxHeadingDegrees - zxHeadingDegrees) > movement_variation_limit 
+    abs(abs(previous_headingDegrees) - abs(headingDegrees)) > movement_variation_limit ||
+    abs(abs(previous_xyHeadingDegrees) - abs(xyHeadingDegrees)) > movement_variation_limit||
+    abs(abs(previous_zxHeadingDegrees) - abs(zxHeadingDegrees)) > movement_variation_limit 
     ) {
     should_alarm = true;
   }
