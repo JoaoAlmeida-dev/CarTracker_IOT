@@ -59,7 +59,8 @@
             "ae09fbeb3d0ee807",
             "98d0965f01107b65",
             "acdd71a48371ad93",
-            "bf3a2f95bd6b00ff"
+            "bf3a2f95bd6b00ff",
+            "99ac6d9cfa08d594"
         ],
         "x": 1094,
         "y": 539,
@@ -82,14 +83,17 @@
         "nodes": [
             "afa10f32099e0e54",
             "ac2c61949fe2b733",
-            "4435d4aa8570e53f",
             "1ec74bc22b025340",
-            "ee9067c386c4bfb4"
+            "ee9067c386c4bfb4",
+            "514523b807f94a6a",
+            "544f3bbb0ae4ce0b",
+            "bb5349a0303645fc",
+            "67439d10f9905592"
         ],
-        "x": 34,
-        "y": 879,
-        "w": 892,
-        "h": 142
+        "x": 124,
+        "y": 919,
+        "w": 1132,
+        "h": 242
     },
     {
         "id": "87d4ed4463a9d712",
@@ -144,27 +148,6 @@
         "h": 202
     },
     {
-        "id": "673ed9df070f6f8b",
-        "type": "group",
-        "z": "f9294724958d27a2",
-        "name": "State",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "efec1e7ec1208445",
-            "951ff97c5974b8c3",
-            "b207b068deae7900",
-            "c7521e9bcf0a784f",
-            "5e30b7931bf25794",
-            "eec87c6239cdfce5"
-        ],
-        "x": 1154,
-        "y": 359,
-        "w": 492,
-        "h": 142
-    },
-    {
         "id": "f7358d121f692cc7",
         "type": "group",
         "z": "f9294724958d27a2",
@@ -177,12 +160,13 @@
             "77ab3d82e168e1eb",
             "c9ea25ad60821e9a",
             "52e7089ac6ca79c6",
-            "31700a18efcf04d1"
+            "31700a18efcf04d1",
+            "af8cc191fb814f2f"
         ],
         "x": 1134,
-        "y": 199,
-        "w": 412,
-        "h": 122
+        "y": 179,
+        "w": 452,
+        "h": 142
     },
     {
         "id": "899b493b12ef8f3c",
@@ -224,39 +208,14 @@
             "be876825f047c744",
             "b33e9704f6284aeb",
             "3fb127f097597d6c",
-            "d85e1ed27d2019a8"
+            "d85e1ed27d2019a8",
+            "a586eba9b526be33",
+            "ef865f349faec94b"
         ],
-        "x": 174,
+        "x": 124,
         "y": 833,
-        "w": 1518,
+        "w": 1568,
         "h": 468
-    },
-    {
-        "id": "d85e1ed27d2019a8",
-        "type": "group",
-        "z": "f9294724958d27a2",
-        "g": "58581c304b70dfce",
-        "name": "gps",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "67ed7611bc4e11c3",
-            "c4cacbe936455ee0",
-            "f7c35d336edd9920",
-            "698c4f722e82873d",
-            "49e093c9a89b35de",
-            "d094735655d26fd2",
-            "6349d2ba77ebb699",
-            "0d9aca903b63d575",
-            "9475ae36b3cfd1ec",
-            "541d96d648038fce",
-            "717aea70e7deb820"
-        ],
-        "x": 494,
-        "y": 859,
-        "w": 1172,
-        "h": 202
     },
     {
         "id": "7e487b1158a0fb86",
@@ -296,6 +255,55 @@
         "h": 122
     },
     {
+        "id": "d85e1ed27d2019a8",
+        "type": "group",
+        "z": "f9294724958d27a2",
+        "g": "58581c304b70dfce",
+        "name": "gps",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "67ed7611bc4e11c3",
+            "c4cacbe936455ee0",
+            "f7c35d336edd9920",
+            "698c4f722e82873d",
+            "49e093c9a89b35de",
+            "d094735655d26fd2",
+            "6349d2ba77ebb699",
+            "0d9aca903b63d575",
+            "9475ae36b3cfd1ec",
+            "541d96d648038fce",
+            "717aea70e7deb820"
+        ],
+        "x": 494,
+        "y": 859,
+        "w": 1172,
+        "h": 202
+    },
+    {
+        "id": "673ed9df070f6f8b",
+        "type": "group",
+        "z": "f9294724958d27a2",
+        "name": "State",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "efec1e7ec1208445",
+            "951ff97c5974b8c3",
+            "b207b068deae7900",
+            "c7521e9bcf0a784f",
+            "5e30b7931bf25794",
+            "eec87c6239cdfce5",
+            "f62fe2d764467aaf"
+        ],
+        "x": 1154,
+        "y": 359,
+        "w": 512,
+        "h": 142
+    },
+    {
         "id": "c42495022a870b0e",
         "type": "junction",
         "z": "f9294724958d27a2",
@@ -318,20 +326,6 @@
         "wires": [
             [
                 "4ab0a4f4c4e55b75"
-            ]
-        ]
-    },
-    {
-        "id": "5e30b7931bf25794",
-        "type": "junction",
-        "z": "f9294724958d27a2",
-        "g": "673ed9df070f6f8b",
-        "x": 1180,
-        "y": 460,
-        "wires": [
-            [
-                "efec1e7ec1208445",
-                "c7521e9bcf0a784f"
             ]
         ]
     },
@@ -365,22 +359,11 @@
         ]
     },
     {
-        "id": "0a29f4a60dfcb81d",
-        "type": "junction",
-        "z": "f9294724958d27a2",
-        "x": 20,
-        "y": 120,
-        "wires": [
-            [
-                "a586eba9b526be33"
-            ]
-        ]
-    },
-    {
         "id": "a586eba9b526be33",
         "type": "junction",
         "z": "f9294724958d27a2",
-        "x": 80,
+        "g": "58581c304b70dfce",
+        "x": 200,
         "y": 1060,
         "wires": [
             [
@@ -415,28 +398,16 @@
         ]
     },
     {
-        "id": "eec87c6239cdfce5",
-        "type": "junction",
-        "z": "f9294724958d27a2",
-        "g": "673ed9df070f6f8b",
-        "x": 1620,
-        "y": 420,
-        "wires": [
-            [
-                "633df534f1fc9b68"
-            ]
-        ]
-    },
-    {
         "id": "31700a18efcf04d1",
         "type": "junction",
         "z": "f9294724958d27a2",
         "g": "f7358d121f692cc7",
-        "x": 1520,
+        "x": 1460,
         "y": 240,
         "wires": [
             [
-                "e8b1d4ddc359c944"
+                "af8cc191fb814f2f",
+                "13dc4db4d204017a"
             ]
         ]
     },
@@ -455,43 +426,6 @@
         ]
     },
     {
-        "id": "633df534f1fc9b68",
-        "type": "junction",
-        "z": "f9294724958d27a2",
-        "x": 1720,
-        "y": 420,
-        "wires": [
-            [
-                "94b7ad07044b3f31"
-            ]
-        ]
-    },
-    {
-        "id": "e8b1d4ddc359c944",
-        "type": "junction",
-        "z": "f9294724958d27a2",
-        "x": 1760,
-        "y": 240,
-        "wires": [
-            [
-                "13dc4db4d204017a",
-                "94b7ad07044b3f31"
-            ]
-        ]
-    },
-    {
-        "id": "94b7ad07044b3f31",
-        "type": "junction",
-        "z": "f9294724958d27a2",
-        "x": 1760,
-        "y": 160,
-        "wires": [
-            [
-                "0a29f4a60dfcb81d"
-            ]
-        ]
-    },
-    {
         "id": "bf3a2f95bd6b00ff",
         "type": "junction",
         "z": "f9294724958d27a2",
@@ -502,7 +436,21 @@
             [
                 "98d0965f01107b65",
                 "acdd71a48371ad93",
-                "633df534f1fc9b68"
+                "99ac6d9cfa08d594"
+            ]
+        ]
+    },
+    {
+        "id": "5e30b7931bf25794",
+        "type": "junction",
+        "z": "f9294724958d27a2",
+        "g": "673ed9df070f6f8b",
+        "x": 1180,
+        "y": 460,
+        "wires": [
+            [
+                "efec1e7ec1208445",
+                "c7521e9bcf0a784f"
             ]
         ]
     },
@@ -555,7 +503,7 @@
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#097479",
+                "baseColor": "#2c8287",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "edited": true,
                 "reset": false
@@ -569,11 +517,11 @@
             "themeState": {
                 "base-color": {
                     "default": "#097479",
-                    "value": "#097479",
-                    "edited": false
+                    "value": "#2c8287",
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#097479",
+                    "value": "#2c8287",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -581,11 +529,11 @@
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#0eb8c0",
+                    "value": "#3fb9c0",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -601,7 +549,7 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#097479",
+                    "value": "#2c8287",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -638,17 +586,6 @@
                 "py": 0
             }
         }
-    },
-    {
-        "id": "d49361794339e96d",
-        "type": "ui_group",
-        "name": "Email",
-        "tab": "27fcbb909749d0aa",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
     },
     {
         "id": "1d039f1066253cac",
@@ -739,47 +676,11 @@
         "mode": "RWC"
     },
     {
-        "id": "27fcbb909749d0aa",
-        "type": "ui_tab",
-        "name": "Email",
-        "icon": "email",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "bb53a816f475d0f4",
         "type": "ui_group",
         "name": "State",
         "tab": "d1f6a11134169a70",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "4067421f.1778ec",
-        "type": "ui_tab",
-        "name": "DB Table",
-        "icon": "dashboard",
-        "order": 5,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "7bbfa01ef143c38b",
-        "type": "ui_tab",
-        "name": "Downlink",
-        "icon": "network",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "380d012672404e5d",
-        "type": "ui_group",
-        "name": "Downlink",
-        "tab": "7bbfa01ef143c38b",
-        "order": 1,
+        "order": 3,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -804,7 +705,7 @@
         "type": "ui_group",
         "name": "DB Table",
         "tab": "d1f6a11134169a70",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": "35",
         "collapse": false,
@@ -926,7 +827,7 @@
         "type": "ui_group",
         "name": "StateDB",
         "tab": "d1f6a11134169a70",
-        "order": 4,
+        "order": 5,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -937,7 +838,18 @@
         "type": "ui_group",
         "name": "AlarmTable",
         "tab": "d1f6a11134169a70",
-        "order": 5,
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "93527ec6a0a2d80d",
+        "type": "ui_group",
+        "name": "Downlink",
+        "tab": "d1f6a11134169a70",
+        "order": 2,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -1289,24 +1201,6 @@
         ]
     },
     {
-        "id": "efec1e7ec1208445",
-        "type": "debug",
-        "z": "f9294724958d27a2",
-        "g": "673ed9df070f6f8b",
-        "name": "changeState",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1290,
-        "y": 460,
-        "wires": []
-    },
-    {
         "id": "61fabea1840d0ae3",
         "type": "change",
         "z": "f9294724958d27a2",
@@ -1334,24 +1228,6 @@
                 "5d8b978c99b84737"
             ]
         ]
-    },
-    {
-        "id": "951ff97c5974b8c3",
-        "type": "ui_text",
-        "z": "f9294724958d27a2",
-        "g": "673ed9df070f6f8b",
-        "group": "bb53a816f475d0f4",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "State of the app",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 1520,
-        "y": 400,
-        "wires": []
     },
     {
         "id": "7eab934dedf6fe25",
@@ -1594,43 +1470,6 @@
         "wires": []
     },
     {
-        "id": "b207b068deae7900",
-        "type": "sqlite",
-        "z": "f9294724958d27a2",
-        "g": "673ed9df070f6f8b",
-        "mydb": "0225b7fecd64885b",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 1510,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c7521e9bcf0a784f",
-        "type": "function",
-        "z": "f9294724958d27a2",
-        "g": "673ed9df070f6f8b",
-        "name": "INSERT into state",
-        "func": "\nvar date = new Date().getTime();\nvar state = msg.payload.changedState ? \"GPS\" : \"Gyro\";\n\nreturn {\n    \"payload\": state,\n    \"topic\": `INSERT into state  (date , state ) VALUES (${date}, \\\"${state}\\\" );`\n};",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1310,
-        "y": 420,
-        "wires": [
-            [
-                "b207b068deae7900",
-                "951ff97c5974b8c3",
-                "eec87c6239cdfce5"
-            ]
-        ]
-    },
-    {
         "id": "6e3b3f338ceb61b4",
         "type": "ui_template",
         "z": "f9294724958d27a2",
@@ -1765,7 +1604,7 @@
         "g": "899b493b12ef8f3c",
         "name": "",
         "group": "21940618bc9ff47f",
-        "order": 0,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1981,6 +1820,140 @@
         ]
     },
     {
+        "id": "ef865f349faec94b",
+        "type": "link in",
+        "z": "f9294724958d27a2",
+        "g": "58581c304b70dfce",
+        "name": "selectDbs_out",
+        "links": [
+            "99ac6d9cfa08d594",
+            "f62fe2d764467aaf",
+            "af8cc191fb814f2f"
+        ],
+        "x": 165,
+        "y": 1060,
+        "wires": [
+            [
+                "a586eba9b526be33"
+            ]
+        ]
+    },
+    {
+        "id": "99ac6d9cfa08d594",
+        "type": "link out",
+        "z": "f9294724958d27a2",
+        "g": "26f32862af1d3322",
+        "name": "selectDbs_in",
+        "mode": "link",
+        "links": [
+            "ef865f349faec94b"
+        ],
+        "x": 1535,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "f62fe2d764467aaf",
+        "type": "link out",
+        "z": "f9294724958d27a2",
+        "g": "673ed9df070f6f8b",
+        "name": "selectDbs_in",
+        "mode": "link",
+        "links": [
+            "ef865f349faec94b"
+        ],
+        "x": 1625,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "af8cc191fb814f2f",
+        "type": "link out",
+        "z": "f9294724958d27a2",
+        "g": "f7358d121f692cc7",
+        "name": "selectDbs_in",
+        "mode": "link",
+        "links": [
+            "ef865f349faec94b"
+        ],
+        "x": 1545,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "efec1e7ec1208445",
+        "type": "debug",
+        "z": "f9294724958d27a2",
+        "g": "673ed9df070f6f8b",
+        "name": "changeState",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "951ff97c5974b8c3",
+        "type": "ui_text",
+        "z": "f9294724958d27a2",
+        "g": "673ed9df070f6f8b",
+        "group": "bb53a816f475d0f4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "State of the app",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1520,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b207b068deae7900",
+        "type": "sqlite",
+        "z": "f9294724958d27a2",
+        "g": "673ed9df070f6f8b",
+        "mydb": "0225b7fecd64885b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "",
+        "x": 1510,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7521e9bcf0a784f",
+        "type": "function",
+        "z": "f9294724958d27a2",
+        "g": "673ed9df070f6f8b",
+        "name": "INSERT into state",
+        "func": "\nvar date = new Date().getTime();\nvar state = msg.payload.changedState ? \"GPS\" : \"Gyro\";\n\nreturn {\n    \"payload\": state,\n    \"topic\": `INSERT into state  (date , state ) VALUES (${date}, \\\"${state}\\\" );`\n};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 420,
+        "wires": [
+            [
+                "951ff97c5974b8c3",
+                "b207b068deae7900",
+                "f62fe2d764467aaf"
+            ]
+        ]
+    },
+    {
         "id": "c8e50233bb77ad49",
         "type": "inject",
         "z": "72de9661af2c534c",
@@ -2133,14 +2106,14 @@
         "z": "72de9661af2c534c",
         "g": "c2c2b84629bba374",
         "name": "function 6",
-        "func": "msg.payload = [0, 42, 255, 0];\nvar downlink = {\n    \"downlinks\": [{\n    \"f_port\": 15,\n    \"frm_payload\": \"vu8=\",\n    \"priority\": \"HIGH\",\n    \"confirmed\": true,\n    \"correlation_ids\": [\"my - correlation - id\"]\n    }]\n}\nreturn {\n        \"downlinks\": [{\n            \"f_port\": 15,\n            //\"frm_payload\": msg.payload.toString(\"base64\"),\n            \"frm_payload\": \"vu8=\",\n            \"priority\": \"NORMAL\"\n        }]\n}\n",
+        "func": "var downlink = {\n    \"downlinks\": [{\n    \"f_port\": 15,\n    \"frm_payload\": \"vu8=\",\n    \"priority\": \"HIGH\",\n    \"confirmed\": true,\n    \"correlation_ids\": [\"my - correlation - id\"]\n    }]\n}\n\n//var messageString = `{\\\"payload\\\":\\\"${msg.payload}\\\"}`;\nvar messageString = `{\"payload\":\"${msg.payload}\"}`;\nvar messageJson = {\"payload\":msg.payload};\n//var bytes = [];\n//bytes[0] = messageString >> 8;\n//bytes[1] = messageString;\nvar messageBuffer = Buffer.from(messageString, 'utf-8')\nmsg.payload = {\n    \"downlinks\": [{\n        \"f_port\": 1,\n        //\"frm_payload\": Buffer.from(bytes).toString('base64'),\n        \"frm_payload\": Buffer.from(messageBuffer).toString('base64'),\n        \"decoded_payload\": messageJson,\n        \"priority\": \"HIGH\",\n        \"confirmed\": true\n    }]\n}\n\nreturn msg\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 920,
+        "x": 260,
+        "y": 1060,
         "wires": [
             [
                 "ac2c61949fe2b733",
@@ -2154,7 +2127,7 @@
         "z": "72de9661af2c534c",
         "g": "c2c2b84629bba374",
         "name": "",
-        "topic": "v3/lic-lab-2@ttn/devices/eui-a8610a34323b8708/down/push",
+        "topic": "v3/lic-lab-2@ttn/devices/eui-a8610a34323b8708/down/replace",
         "qos": "1",
         "retain": "true",
         "respTopic": "",
@@ -2163,29 +2136,9 @@
         "correl": "",
         "expiry": "",
         "broker": "1d039f1066253cac",
-        "x": 680,
-        "y": 920,
+        "x": 610,
+        "y": 1060,
         "wires": []
-    },
-    {
-        "id": "4435d4aa8570e53f",
-        "type": "inject",
-        "z": "72de9661af2c534c",
-        "g": "c2c2b84629bba374",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 170,
-        "y": 960,
-        "wires": [
-            [
-                "afa10f32099e0e54"
-            ]
-        ]
     },
     {
         "id": "1ec74bc22b025340",
@@ -2193,8 +2146,8 @@
         "z": "72de9661af2c534c",
         "g": "c2c2b84629bba374",
         "name": "",
-        "group": "21940618bc9ff47f",
-        "order": 0,
+        "group": "93527ec6a0a2d80d",
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2204,15 +2157,15 @@
         "bgcolor": "",
         "className": "",
         "icon": "send",
-        "payload": "",
+        "payload": "text",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 140,
-        "y": 920,
+        "x": 1100,
+        "y": 960,
         "wires": [
             [
-                "afa10f32099e0e54"
+                "67439d10f9905592"
             ]
         ]
     },
@@ -2230,8 +2183,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 980,
+        "x": 460,
+        "y": 1120,
         "wires": []
     },
     {
@@ -2787,6 +2740,175 @@
         "wires": [
             [
                 "59b43ecc598e40d6"
+            ]
+        ]
+    },
+    {
+        "id": "514523b807f94a6a",
+        "type": "ui_text_input",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "",
+        "label": "Text for downlink",
+        "tooltip": "",
+        "group": "93527ec6a0a2d80d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 290,
+        "y": 960,
+        "wires": [
+            [
+                "544f3bbb0ae4ce0b"
+            ]
+        ]
+    },
+    {
+        "id": "544f3bbb0ae4ce0b",
+        "type": "change",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "textInput",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 960,
+        "wires": [
+            [
+                "593888a23a3bb561"
+            ]
+        ]
+    },
+    {
+        "id": "593888a23a3bb561",
+        "type": "switch",
+        "z": "72de9661af2c534c",
+        "name": "is text empty?",
+        "property": "textInput",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 740,
+        "y": 960,
+        "wires": [
+            [
+                "a0f6c9ebf672a652"
+            ],
+            [
+                "9bb43063c1a5db65"
+            ]
+        ]
+    },
+    {
+        "id": "a0f6c9ebf672a652",
+        "type": "change",
+        "z": "72de9661af2c534c",
+        "name": "enabled false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 940,
+        "wires": [
+            [
+                "1ec74bc22b025340"
+            ]
+        ]
+    },
+    {
+        "id": "9bb43063c1a5db65",
+        "type": "change",
+        "z": "72de9661af2c534c",
+        "name": "enabled true",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 980,
+        "wires": [
+            [
+                "1ec74bc22b025340"
+            ]
+        ]
+    },
+    {
+        "id": "67439d10f9905592",
+        "type": "link out",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "send downlink",
+        "mode": "link",
+        "links": [
+            "bb5349a0303645fc"
+        ],
+        "x": 1215,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "bb5349a0303645fc",
+        "type": "link in",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "",
+        "links": [
+            "67439d10f9905592"
+        ],
+        "x": 165,
+        "y": 1060,
+        "wires": [
+            [
+                "afa10f32099e0e54"
             ]
         ]
     }
