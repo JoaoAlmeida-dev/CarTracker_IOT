@@ -4,7 +4,7 @@
 // Create a TinyGPS++ object to encode data from gps module
 TinyGPSPlus gps;
 
-constexpr int PRECISION = 5;
+constexpr int PRECISION = 3;
 
 void gps_setup() {
   debugln("Setting up gps");
@@ -54,13 +54,13 @@ String gps_info() {
       message.concat(",");
     }
 
-    json = "\"l\": {\"lat\":";
+    json = "\"lat\":";
     json.concat(String(gps.location.lat(), PRECISION));
     json.concat(",\"lng\":");
     json.concat(String(gps.location.lng(), PRECISION));
     json.concat(",\"alt\":");
     json.concat(String(gps.altitude.meters(), PRECISION));
-    json.concat("}");
+    //json.concat("}");
 
     message.concat(json);
   } else {
@@ -69,13 +69,19 @@ String gps_info() {
     } else {
       message.concat(",");
     }
-    json = "\"l\": {\"lat\":";
-    json.concat(String(38.704510, PRECISION));
+    json = "\"lat\":";
+    float lat = 38.704510 + (random(1, 100) / 10000.0);
+    json.concat(String(lat, PRECISION));
+
     json.concat(",\"lng\":");
-    json.concat(String(-9.202282, PRECISION));
+    float lng = -9.202282 + (random(1, 100) / 10000.0);
+    json.concat(String(lng, PRECISION));
+
     json.concat(",\"alt\":");
-    json.concat(String(78.20, PRECISION));
-    json.concat("}");
+    float alt = 78.20 + (random(1, 100) / 10000.0);
+    json.concat(String(alt, PRECISION));
+
+    //json.concat("}");
 
     message.concat(json);
   }

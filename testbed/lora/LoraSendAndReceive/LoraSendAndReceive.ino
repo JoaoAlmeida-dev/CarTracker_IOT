@@ -16,22 +16,30 @@ LoRaModem modem;
 String appEui = SECRET_APP_EUI;
 String appKey = SECRET_APP_KEY;
 
-void connect_lora(){
+void connect_lora() {
   Serial.println("Trying to connect to lora...");
   int connected = modem.joinOTAA(appEui, appKey);
   while (!connected) {
     connected = modem.joinOTAA(appEui, appKey);
     if (!connected) {
       Serial.println("Something went wrong; are you indoor? Move near a window and retry");
-    } 
+    }
   }
   Serial.println("Connected to Lora");
 }
 
 void setup() {
+
   // put your setup code here, to run once:
   Serial.begin(115200);
-  while (!Serial);
+  while (!Serial)
+    ;
+
+  parse_rcv_to_state("state = 1");
+  parse_rcv_to_state("state=1");
+  parse_rcv_to_state("state = 0");
+  parse_rcv_to_state("state=0");
+
   // change this to your regional band (eg. US915, AS923, ...)
   if (!modem.begin(EU868)) {
     Serial.println("Failed to start module");
@@ -52,17 +60,30 @@ void setup() {
 }
 
 void loop() {
-  Serial.println();
-  Serial.println("Enter a message to send to network");
-  Serial.println("(make sure that end-of-line 'NL' is enabled)");
 
-  while (!Serial.available());
-  String temp = Serial.readStringUntil('\n');
+  //Serial.println();
+  //Serial.println("Enter a message to send to network");
+  //Serial.println("(make sure that end-of-line 'NL' is enabled)");
 
-  if (temp.equals("connect")){
-      connect_lora();
+  //while (!Serial.available())
+  //  ;
+  //String temp = Serial.readStringUntil('\n');
+
+  //if (temp.equals("connect")) {
+  //  connect_lora();
+  //}
+  
+  String msg = { "{\"test\":1}" };
+  String received = send_Message(msg);
+  bool state = parse_rcv_to_state(received);
+  if (state != NULL) {
+    Serial.print("new state:");
+    Serial.println(state);
   }
-  String msg = {"{\"test\":1}"};
+  delay(2*60 * 1000);
+}
+
+String send_Message(String msg) {
 
   Serial.println();
   Serial.print("Sending: " + msg + " - ");
@@ -72,6 +93,7 @@ void loop() {
     Serial.print(" ");
   }
   Serial.println();
+
   int err;
   modem.beginPacket();
   modem.print(msg);
@@ -84,10 +106,11 @@ void loop() {
     Serial.println("(you may send a limited amount of messages per minute, depending on the signal strength");
     Serial.println("it may vary from 1 message every couple of seconds to 1 message every minute)");
   }
+
   delay(1000);
   if (!modem.available()) {
     Serial.println("No downlink message received at this time.");
-    return;
+    return "";
   }
   char rcv[64];
   int i = 0;
@@ -102,4 +125,17 @@ void loop() {
   }
   Serial.println();
   Serial.println(rcv);
+
+  return rcv;
+}
+
+
+bool parse_rcv_to_state(String received) {
+  int split = received.indexOf("=");
+  if (received.indexOf("state") > -1) {
+    bool state = received.indexOf("1") > -1;
+    return state;
+  } else {
+    return NULL;
+  }
 }

@@ -35,24 +35,24 @@ void lora_setup() {
 }
 
 
-void lora_loop() {
-  float h = 10.0;
-  float t = 10.2;
-  String msg{"" + String(t) + "," + String(h)};
-  #if DEBUG
-    Serial.print("Sending: " + msg + " - ");
-    for (unsigned int i = 0; i < msg.length(); i++) {
-      Serial.print(msg[i] >> 4, HEX);
-      Serial.print(msg[i] & 0xF, HEX);
-      Serial.print(" ");
-    }
-    Serial.println(""); 
-  #endif
-  lora_uplink(msg);
-  delay(60*1000);
-}
+// void lora_loop() {
+//   float h = 10.0;
+//   float t = 10.2;
+//   String msg{"" + String(t) + "," + String(h)};
+//   #if DEBUG
+//     Serial.print("Sending: " + msg + " - ");
+//     for (unsigned int i = 0; i < msg.length(); i++) {
+//       Serial.print(msg[i] >> 4, HEX);
+//       Serial.print(msg[i] & 0xF, HEX);
+//       Serial.print(" ");
+//     }
+//     Serial.println(""); 
+//   #endif
+//   lora_uplink(msg);
+//   delay(60*1000);
+// }
 
-void lora_uplink(String msg){
+String lora_uplink(String msg){
 
   int err;
   modem.beginPacket();
@@ -73,15 +73,15 @@ void lora_uplink(String msg){
     debugln("Error sending message :(you may send a limited amount of messages per minute, depending on the signal strength it may vary from 1 message every couple of seconds to 1 message every minute)");
   }
   delay(1000);
-  lora_downlink();
+  return lora_downlink();
 }
 
 
-void lora_downlink(){
+String lora_downlink(){
    delay(1000);
    if (!modem.available()) {
     debugln("No downlink message received at this time.");
-    return;
+    return "";
   }
   char rcv[64];
   int i = 0;
@@ -96,5 +96,8 @@ void lora_downlink(){
       Serial.print(" ");
     }
     Serial.println();
+    Serial.println(rcv);
+    Serial.println();
   #endif
+  return rcv;
 }

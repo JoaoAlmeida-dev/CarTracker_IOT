@@ -30,14 +30,11 @@ uint8_t oldButton = 0;
 // * when appState == False, the app is in security/gyroMode, the gyro sensor is activated and if any sudden movements are detected, alarm starts playing and alert message is sent via LoRaWan
 bool appState = false;
 
-//https://www.youtube.com/watch?v=qn8SP93L3iQ
 unsigned long current_time = 0;
-unsigned long last_alarm = 0;
-unsigned long previous_time_downlink = 0;
 unsigned long previous_time_gps = 0;
-constexpr unsigned long DOWNLINK_WAITTIME = 60UL*1000UL;
-constexpr unsigned long GPS_WAITTIME = 10UL*60UL*1000UL;
-constexpr unsigned long ALARM_WAITTIME = 10000UL;
+constexpr unsigned long GPS_WAITTIME = 5UL*60UL*1000UL;
+unsigned long last_alarm = 0;
+constexpr unsigned long ALARM_WAITTIME = 10 * 1000UL;
 
 inline void blink_built_in(){
   digitalWrite(LED_BUILTIN,HIGH);
@@ -45,9 +42,15 @@ inline void blink_built_in(){
   digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
 }
+
 void setup()
 {
-  // receive pins on setup methods
+  Serial.begin(115200);
+  while (!Serial)
+    ;
+    
+  randomSeed(analogRead(5));
+
   blink_built_in();
   gps_setup();
   blink_built_in();
@@ -65,13 +68,13 @@ void loop()
   button_update_state();
   current_time = millis();
   
-  if(current_time - previous_time_downlink > DOWNLINK_WAITTIME ){
-      debug("Reading downlink message from lora every ");
-      debug(DOWNLINK_WAITTIME);
-      debugln(" milliseconds");
-      previous_time_downlink = current_time;
-      lora_downlink();
-  }
+  // if(current_time - previous_time_downlink > DOWNLINK_WAITTIME ){
+  //     debug("Reading downlink message from lora every ");
+  //     debug(DOWNLINK_WAITTIME);
+  //     debugln(" milliseconds");
+  //     previous_time_downlink = current_time;
+  //     lora_downlink();
+  // }
 
   if (appState)
   {
@@ -94,18 +97,39 @@ void loop()
       {
         last_alarm = current_time;
         
-        String alertMessage {"{\"alert\":"};
+        String alertMessage {"{\"a\":"};
         alertMessage.concat(true);
         alertMessage.concat("}");
         debug("Sending Alert message:");
         debugln(alertMessage);
         
-        lora_uplink(alertMessage);
-        //buzzer_play(BUZZ_PIN,BUZZ_TEMPO);
+        handle_lora_message(alertMessage);
+        buzzer_play(BUZZ_PIN,BUZZ_TEMPO);
       }
     }
   }
 }
+
+//Where messages are sent through lora and the corresponding downlink message is parsed and corresponding changes are made
+inline void handle_lora_message(String message){
+  String received_message = lora_uplink(message);
+  
+  if (received_message.indexOf("state") > -1) {
+    set_app_state( received_message.indexOf("1") > -1);
+  }
+}
+
+inline void set_app_state(bool new_state){
+  appState = new_state;
+  debug("changed app state to: ");
+  debugln(appState);
+  String appStateMessage {"{\"s\":"};
+  appStateMessage.concat(appState);
+  appStateMessage.concat("}");
+
+  handle_lora_message(appStateMessage);
+}
+
 //Directly changes the ledState variable according to if the button was pushed or not
 inline void button_update_state(){
   newButton = digitalRead(BUTTON_PIN);
@@ -117,21 +141,15 @@ inline void button_update_state(){
       // ON
       debugln("BUTTON turned on");
       digitalWrite(LED_BUILTIN, HIGH);
+      set_app_state(true);
     }
     else
     {
       // OFF
       debugln("BUTTON turned off");
       digitalWrite(LED_BUILTIN, LOW);
+      set_app_state(false);
     }
-    appState = !appState;
-    
-    String appStateMessage {"{\"changedState\":"};
-    appStateMessage.concat(appState);
-    appStateMessage.concat("}");
-
-    lora_uplink(appStateMessage);
-    gps_read();
   }
   oldButton = newButton;
 }

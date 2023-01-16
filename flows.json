@@ -36,12 +36,17 @@
             "ead469c2d5725752",
             "adcc5d28fdfdf376",
             "5ca79092938ab726",
-            "916ed962a466463b"
+            "916ed962a466463b",
+            "acfd73a050d315fb",
+            "2092c76362a5557d",
+            "8e92c69aa56ff3cf",
+            "48ed45d8c134179f",
+            "0653d5122e53973f"
         ],
-        "x": 34,
-        "y": 59,
-        "w": 752,
-        "h": 242
+        "x": 194,
+        "y": 279,
+        "w": 812,
+        "h": 422
     },
     {
         "id": "26f32862af1d3322",
@@ -52,10 +57,8 @@
             "label": true
         },
         "nodes": [
-            "c4fd8eff54a8a2fd",
             "960ba5b030bd6242",
             "c42495022a870b0e",
-            "7eab934dedf6fe25",
             "ae09fbeb3d0ee807",
             "98d0965f01107b65",
             "acdd71a48371ad93",
@@ -66,34 +69,6 @@
         "y": 539,
         "w": 552,
         "h": 222
-    },
-    {
-        "id": "c2c2b84629bba374",
-        "type": "group",
-        "z": "72de9661af2c534c",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "afa10f32099e0e54",
-            "ac2c61949fe2b733",
-            "1ec74bc22b025340",
-            "ee9067c386c4bfb4",
-            "514523b807f94a6a",
-            "544f3bbb0ae4ce0b",
-            "bb5349a0303645fc",
-            "67439d10f9905592"
-        ],
-        "x": 124,
-        "y": 919,
-        "w": 1132,
-        "h": 242
     },
     {
         "id": "87d4ed4463a9d712",
@@ -114,12 +89,17 @@
             "772ec508b97fc538",
             "d1dc758b1bd29772",
             "a888a6c5fb823d3c",
-            "9c65f0dc25547908"
+            "9c65f0dc25547908",
+            "ccce084c2f2034bb",
+            "6d480112e2e5f13e",
+            "880175807ccd2e58",
+            "8d2f504e9915ce2e",
+            "5da68fe5ac433600"
         ],
-        "x": 34,
-        "y": 319,
-        "w": 692,
-        "h": 202
+        "x": 1094,
+        "y": 279,
+        "w": 772,
+        "h": 362
     },
     {
         "id": "55b011c81ead33d6",
@@ -140,18 +120,23 @@
             "81421991f4522206",
             "59b43ecc598e40d6",
             "2418737fe2d927fc",
-            "020a733cb8b033a9"
+            "020a733cb8b033a9",
+            "0824f6ce0ccab1bf",
+            "ced05e70c04f6b3e",
+            "9925b7e82281ad2c",
+            "a78e21fe881e1253",
+            "00562d733cab7fe6"
         ],
-        "x": 34,
-        "y": 559,
-        "w": 692,
-        "h": 202
+        "x": 194,
+        "y": 719,
+        "w": 852,
+        "h": 362
     },
     {
         "id": "f7358d121f692cc7",
         "type": "group",
         "z": "f9294724958d27a2",
-        "name": "State",
+        "name": "Alarm",
         "style": {
             "label": true
         },
@@ -163,15 +148,16 @@
             "31700a18efcf04d1",
             "af8cc191fb814f2f"
         ],
-        "x": 1134,
-        "y": 179,
-        "w": 452,
-        "h": 142
+        "x": 1094,
+        "y": 139,
+        "w": 472,
+        "h": 182
     },
     {
         "id": "899b493b12ef8f3c",
         "type": "group",
         "z": "f9294724958d27a2",
+        "g": "d1ff355fe77133b6",
         "name": "email",
         "style": {
             "label": true
@@ -182,16 +168,16 @@
             "42f0d88de020f203",
             "2f51886ad7147166"
         ],
-        "x": 1814,
-        "y": 199,
-        "w": 512,
+        "x": 1694,
+        "y": 119,
+        "w": 552,
         "h": 122
     },
     {
         "id": "58581c304b70dfce",
         "type": "group",
         "z": "f9294724958d27a2",
-        "name": "Select *",
+        "name": "Refresh",
         "style": {
             "label": true
         },
@@ -210,12 +196,16 @@
             "3fb127f097597d6c",
             "d85e1ed27d2019a8",
             "a586eba9b526be33",
-            "ef865f349faec94b"
+            "ef865f349faec94b",
+            "d4afbdae6c476064",
+            "7d69e4a2508c2037",
+            "1948d49c5317c864",
+            "e0eef850401ca5d1"
         ],
-        "x": 124,
+        "x": 144,
         "y": 833,
         "w": 1568,
-        "h": 468
+        "h": 568
     },
     {
         "id": "7e487b1158a0fb86",
@@ -231,8 +221,8 @@
             "208d94f672d49c86",
             "84c8e5ab14a9333f"
         ],
-        "x": 174,
-        "y": 659,
+        "x": 154,
+        "y": 519,
         "w": 472,
         "h": 162
     },
@@ -249,10 +239,51 @@
             "788fe4f8dbb045e4",
             "61fabea1840d0ae3"
         ],
-        "x": 174,
-        "y": 499,
+        "x": 154,
+        "y": 359,
         "w": 392,
         "h": 122
+    },
+    {
+        "id": "673ed9df070f6f8b",
+        "type": "group",
+        "z": "f9294724958d27a2",
+        "name": "State",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "efec1e7ec1208445",
+            "951ff97c5974b8c3",
+            "b207b068deae7900",
+            "c7521e9bcf0a784f",
+            "5e30b7931bf25794",
+            "f62fe2d764467aaf"
+        ],
+        "x": 1094,
+        "y": 339,
+        "w": 512,
+        "h": 182
+    },
+    {
+        "id": "5585ac594366d050",
+        "type": "group",
+        "z": "f9294724958d27a2",
+        "g": "d1ff355fe77133b6",
+        "name": "WhatsApp",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9b666f3e.797cb",
+            "b234123a.c95f5",
+            "90eae997.db5198",
+            "19ec4381c8108349"
+        ],
+        "x": 1694,
+        "y": 259,
+        "w": 512,
+        "h": 142
     },
     {
         "id": "d85e1ed27d2019a8",
@@ -274,34 +305,55 @@
             "0d9aca903b63d575",
             "9475ae36b3cfd1ec",
             "541d96d648038fce",
-            "717aea70e7deb820"
+            "717aea70e7deb820",
+            "ed84d32751bf0277",
+            "4d45a70cf395637d"
         ],
-        "x": 494,
+        "x": 594,
         "y": 859,
-        "w": 1172,
-        "h": 202
+        "w": 1092,
+        "h": 282
     },
     {
-        "id": "673ed9df070f6f8b",
+        "id": "d1ff355fe77133b6",
         "type": "group",
         "z": "f9294724958d27a2",
-        "name": "State",
+        "name": "Alarm Notification",
         "style": {
             "label": true
         },
         "nodes": [
-            "efec1e7ec1208445",
-            "951ff97c5974b8c3",
-            "b207b068deae7900",
-            "c7521e9bcf0a784f",
-            "5e30b7931bf25794",
-            "eec87c6239cdfce5",
-            "f62fe2d764467aaf"
+            "899b493b12ef8f3c",
+            "5585ac594366d050"
         ],
-        "x": 1154,
-        "y": 359,
-        "w": 512,
-        "h": 142
+        "x": 1668,
+        "y": 93,
+        "w": 604,
+        "h": 334
+    },
+    {
+        "id": "c2c2b84629bba374",
+        "type": "group",
+        "z": "72de9661af2c534c",
+        "name": "Downlink",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "afa10f32099e0e54",
+            "ac2c61949fe2b733",
+            "ee9067c386c4bfb4",
+            "bb5349a0303645fc",
+            "1d85c22485aac01b",
+            "befbae933a1eca5c",
+            "d1e2a501e6128df9",
+            "106bc7eeced7d3f1",
+            "093c498702d896ce"
+        ],
+        "x": 1104,
+        "y": 799,
+        "w": 742,
+        "h": 262
     },
     {
         "id": "c42495022a870b0e",
@@ -321,8 +373,8 @@
         "id": "5d8b978c99b84737",
         "type": "junction",
         "z": "f9294724958d27a2",
-        "x": 640,
-        "y": 580,
+        "x": 660,
+        "y": 440,
         "wires": [
             [
                 "4ab0a4f4c4e55b75"
@@ -334,8 +386,8 @@
         "type": "junction",
         "z": "72de9661af2c534c",
         "g": "6fbc52b23e464251",
-        "x": 540,
-        "y": 160,
+        "x": 700,
+        "y": 420,
         "wires": [
             [
                 "5493965840a5e96c"
@@ -347,8 +399,8 @@
         "type": "junction",
         "z": "f9294724958d27a2",
         "g": "58581c304b70dfce",
-        "x": 440,
-        "y": 1060,
+        "x": 460,
+        "y": 1140,
         "wires": [
             [
                 "6349d2ba77ebb699",
@@ -363,8 +415,8 @@
         "type": "junction",
         "z": "f9294724958d27a2",
         "g": "58581c304b70dfce",
-        "x": 200,
-        "y": 1060,
+        "x": 220,
+        "y": 1140,
         "wires": [
             [
                 "3fb127f097597d6c"
@@ -376,8 +428,8 @@
         "type": "junction",
         "z": "72de9661af2c534c",
         "g": "87d4ed4463a9d712",
-        "x": 460,
-        "y": 400,
+        "x": 1580,
+        "y": 420,
         "wires": [
             [
                 "b427f8a40bbd460b"
@@ -389,8 +441,8 @@
         "type": "junction",
         "z": "72de9661af2c534c",
         "g": "55b011c81ead33d6",
-        "x": 460,
-        "y": 640,
+        "x": 680,
+        "y": 860,
         "wires": [
             [
                 "65ded5876c9275f9"
@@ -402,12 +454,12 @@
         "type": "junction",
         "z": "f9294724958d27a2",
         "g": "f7358d121f692cc7",
-        "x": 1460,
+        "x": 1420,
         "y": 240,
         "wires": [
             [
                 "af8cc191fb814f2f",
-                "13dc4db4d204017a"
+                "38033d8305a7c9a5"
             ]
         ]
     },
@@ -416,11 +468,10 @@
         "type": "junction",
         "z": "f9294724958d27a2",
         "g": "f7358d121f692cc7",
-        "x": 1160,
-        "y": 260,
+        "x": 1120,
+        "y": 240,
         "wires": [
             [
-                "dba4119a5ae27c75",
                 "c9ea25ad60821e9a"
             ]
         ]
@@ -430,7 +481,7 @@
         "type": "junction",
         "z": "f9294724958d27a2",
         "g": "26f32862af1d3322",
-        "x": 1440,
+        "x": 1360,
         "y": 620,
         "wires": [
             [
@@ -445,12 +496,24 @@
         "type": "junction",
         "z": "f9294724958d27a2",
         "g": "673ed9df070f6f8b",
-        "x": 1180,
-        "y": 460,
+        "x": 1120,
+        "y": 400,
         "wires": [
             [
-                "efec1e7ec1208445",
                 "c7521e9bcf0a784f"
+            ]
+        ]
+    },
+    {
+        "id": "38033d8305a7c9a5",
+        "type": "junction",
+        "z": "f9294724958d27a2",
+        "x": 1600,
+        "y": 240,
+        "wires": [
+            [
+                "90eae997.db5198",
+                "2f51886ad7147166"
             ]
         ]
     },
@@ -486,6 +549,7 @@
         "type": "ui_tab",
         "name": "Home",
         "icon": "dashboard",
+        "order": 1,
         "disabled": false,
         "hidden": false
     },
@@ -680,7 +744,7 @@
         "type": "ui_group",
         "name": "State",
         "tab": "d1f6a11134169a70",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -705,9 +769,9 @@
         "type": "ui_group",
         "name": "DB Table",
         "tab": "d1f6a11134169a70",
-        "order": 4,
+        "order": 1,
         "disp": true,
-        "width": "35",
+        "width": "18",
         "collapse": false,
         "className": ""
     },
@@ -716,111 +780,11 @@
         "type": "ui_group",
         "name": "Buttons",
         "tab": "d1f6a11134169a70",
-        "order": 1,
+        "order": 2,
         "disp": true,
         "width": "6",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "3329194858c50817",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 2,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "b404000ef61dd7d2",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 3,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "10af0468c4e774d3",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 4,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "e3d45012591969c8",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 5,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "512316e840e5fee2",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 6,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "4b13a9feaf715b03",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 7,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "a418b788421d53eb",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 8,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "f601dd941d35bd4c",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 9,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "6b0f45a5ae3844c2",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 10,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "8414ac296bb367ec",
-        "type": "ui_spacer",
-        "z": "f9294724958d27a2",
-        "name": "spacer",
-        "group": "ab6f9b75.0d4718",
-        "order": 11,
-        "width": 3,
-        "height": 1
     },
     {
         "id": "8eb2cdda01e36eaf",
@@ -849,6 +813,37 @@
         "type": "ui_group",
         "name": "Downlink",
         "tab": "d1f6a11134169a70",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "38547451b9ad3010",
+        "type": "ui_tab",
+        "name": "DataBase",
+        "icon": "database",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "17753e81d92e804b",
+        "type": "ui_group",
+        "name": "Alarm Table",
+        "tab": "38547451b9ad3010",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4aa4ca6ca286765d",
+        "type": "ui_group",
+        "name": "State table",
+        "tab": "38547451b9ad3010",
         "order": 2,
         "disp": true,
         "width": "6",
@@ -856,19 +851,66 @@
         "className": ""
     },
     {
+        "id": "05ea430d20473210",
+        "type": "ui_group",
+        "name": "GPS Table",
+        "tab": "38547451b9ad3010",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c94dd1720a7e2f30",
+        "type": "ui_group",
+        "name": "Refresh",
+        "tab": "38547451b9ad3010",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "80b99021.9a4",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "WhatsApp API Account"
+    },
+    {
+        "id": "a4ff7c45cb6896fc",
+        "type": "ui_spacer",
+        "z": "f9294724958d27a2",
+        "name": "spacer",
+        "group": "93527ec6a0a2d80d",
+        "order": 5,
+        "width": "1",
+        "height": "2"
+    },
+    {
+        "id": "893675e377a951aa",
+        "type": "ui_spacer",
+        "z": "f9294724958d27a2",
+        "name": "spacer",
+        "group": "bb53a816f475d0f4",
+        "order": 3,
+        "width": "1",
+        "height": "3"
+    },
+    {
         "id": "b16eccc275aba8c5",
         "type": "function",
         "z": "f9294724958d27a2",
         "g": "7e487b1158a0fb86",
         "name": "inject random Data",
-        "func": "var alt= 20 + Math.random() * 0.02\nvar lat= 38.7 + Math.random() * 0.02\nvar lng= -9.22 + Math.random() * 0.02\n\nmsg.payload = {\n    \"f_port\": 1,\n    \"frm_payload\": \"eyJzYXRlbGl0ZXMiOjAsImxvY2F0aW9uIjogeyJsYXQiOjM4LjcwNDUxMDAwMDAsImxuZyI6LTkuMjAyMjgyMDAwMCwiYWx0Ijo3OC4yMDAwMDAwMDAwfSwiZGF0ZSI6IHsiZGF5IjowLCJtb250aCI6MCwieWVhciI6MjAwMH0sInRpbWUiOiB7ImhvdXIiOjAsIm1pbnV0ZSI6MCwic2Vjb25kIjowLCJjZW50aXNlY29uZCI6MH19\",\n    \"decoded_payload\": {\n        \"s\": Math.floor(Math.random() * 10),\n        \"d\": new Date().getTime(),\n        \"t\": new Date().getTime(),\n        \"l\": {\n            alt:alt,\n            lat:lat,\n            lng:lng\n        },\n    },\n    \"rx_metadata\": [\n        {\n            gateway_ids: {\n                gateway_id: \"test\"\n            },\n            rssi: 42,\n            channel_rssi: 42,\n            snr: 4.2\n        }\n    ],\n    \"settings\": {\n        \"data_rate\": {\n            \"lora\": {\n                \"bandwidth\": 125000,\n                \"spreading_factor\": 7\n            }\n        }\n    }\n}\n\n\nreturn {\n    \"payload\": {\n        \"s\": Math.floor(Math.random() * 10),\n        \"d\": new Date().getTime(),\n        \"t\": new Date().getTime(),\n        \"l\": {\n            alt: alt,\n            lat: lat,\n            lng: lng\n        },\n    }\n    };",
+        "func": "var alt= 20 + Math.random() * 0.02\nvar lat= 38.7 + Math.random() * 0.02\nvar lng= -9.22 + Math.random() * 0.02\n\nreturn {\n    \"payload\": {\n        \"s\": Math.floor(Math.random() * 10),\n        \"alt\": alt,\n        \"lat\": lat,\n        \"lng\": lng\n    }\n    };",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 740,
+        "x": 450,
+        "y": 600,
         "wires": [
             [
                 "494c6c88c4b5dd11",
@@ -890,35 +932,9 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 500,
-        "y": 780,
+        "x": 480,
+        "y": 640,
         "wires": []
-    },
-    {
-        "id": "c4fd8eff54a8a2fd",
-        "type": "inject",
-        "z": "f9294724958d27a2",
-        "g": "26f32862af1d3322",
-        "name": "insert",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1190,
-        "y": 580,
-        "wires": [
-            [
-                "7eab934dedf6fe25"
-            ]
-        ]
     },
     {
         "id": "960ba5b030bd6242",
@@ -926,13 +942,13 @@
         "z": "f9294724958d27a2",
         "g": "26f32862af1d3322",
         "name": "insert into db",
-        "func": "\nvar date = new Date().getTime();\nvar satelites = msg.payload.satelites;\n\nvar lat = msg.payload.location.lat;\nvar lon = msg.payload.location.lng;\nvar alt = msg.payload.location.alt;\n\n//\"topic\": \"INSERT into gps  (date , time , lat , lon , alt ) VALUES (1231223144, 1231414234, 38.7 ,-9 ,20 )\"\n\nmsg.topic = `INSERT into gps (date , satelites , lat , lon , alt ) VALUES (${date}, ${satelites} , ${lat} , ${lon} , ${alt} )`\n\n\nreturn msg;",
+        "func": "\nvar date = new Date().getTime();\nvar satelites = msg.payload.s;\n\nvar lat = msg.payload.lat;\nvar lon = msg.payload.lng;\nvar alt = msg.payload.alt;\n\n//\"topic\": \"INSERT into gps  (date , time , lat , lon , alt ) VALUES (1231223144, 1231414234, 38.7 ,-9 ,20 )\"\n\nmsg.topic = `INSERT into gps (date , satelites , lat , lon , alt ) VALUES (${date}, ${satelites} , ${lat} , ${lon} , ${alt} )`\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1330,
+        "x": 1270,
         "y": 620,
         "wires": [
             [
@@ -947,17 +963,17 @@
         "g": "d85e1ed27d2019a8",
         "group": "ab6f9b75.0d4718",
         "name": "gpsTable",
-        "order": 1,
-        "width": 32,
-        "height": 10,
+        "order": 2,
+        "width": "18",
+        "height": "5",
         "format": "<style>\ntable.table-hover tr:hover {\n background:lightblue;\n } \n md-switch {\nposition: center; \nheight: 5px;\n}\nmd-switch .md-thumb {\n background-color: red;\n}\nmd-switch.md-checked .md-thumb {\n background-color: #33CC00;\n}\n\nmd-switch.md-checked .md-bar {\n background-color: lightgreen;\n}\n</style>\n<div class=\"scrollmenu\">\n<table cellpadding=\"1\" border=\"1\" id=\"table-4\" class=\"table-hover\" style=\"width: 100%; border-collapse: collapse; border: 1px solid black\">\n <thead>\n <tr>\n <th title=\"\" bgcolor=gray>Id</th>\n <th title=\"\" bgcolor=gray>Date</th>\n <th title=\"\" bgcolor=gray>Satelites</th>\n <th title=\"\" bgcolor=gray>Longitude</th>\n <th title=\"\" bgcolor=gray>Latitude</th>\n <th title=\"\" bgcolor=gray>Altitude</th>\n  \n </tr>\n </thead>\n <tbody>\n \n <tr ng-repeat=\"row in msg.payload | limitTo:500\">\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.id}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.date}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.satelites}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.lon}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.lat}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.alt}}</center></td>\n\n </tr>\n \n </tbody>\n</table>\n<script type=\"text/javascript\">\n window.onload = function() {\n document.getElementById(\"editable\").focus();\n };\n\n<script>\n(function($scope) {\n$scope.sendRow = function(obj) {\nvar tableCells = document.getElementById(\"table-4\").rows.item(obj).cells;\nvar cellsData = [];\nfor (var j = 0; j < tableCells.length; j++) {\n cellsData[j] = tableCells.item(j).innerText;\n cellsData[j] = cellsData[j].replace(\",\",\".\"); \n}\n$scope.send({ \"payload\": cellsData });\n};\n})(scope);\n</script>\n\n</div>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 1360,
-        "y": 900,
+        "x": 1380,
+        "y": 980,
         "wires": [
             []
         ]
@@ -983,8 +999,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 430,
-        "y": 700,
+        "x": 410,
+        "y": 560,
         "wires": [
             [
                 "b16eccc275aba8c5"
@@ -1000,8 +1016,8 @@
         "depth": "10",
         "layer": "combined",
         "smooth": false,
-        "x": 1310,
-        "y": 1020,
+        "x": 1330,
+        "y": 1100,
         "wires": [
             [
                 "f7c35d336edd9920"
@@ -1014,9 +1030,9 @@
         "z": "f9294724958d27a2",
         "g": "d85e1ed27d2019a8",
         "group": "ab6f9b75.0d4718",
-        "order": 12,
-        "width": 0,
-        "height": 0,
+        "order": 1,
+        "width": "18",
+        "height": "5",
         "name": "",
         "lat": "",
         "lon": "",
@@ -1040,8 +1056,8 @@
         "mapurl": "",
         "mapopt": "",
         "mapwms": false,
-        "x": 1460,
-        "y": 1020,
+        "x": 1480,
+        "y": 1100,
         "wires": []
     },
     {
@@ -1056,8 +1072,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1360,
-        "y": 940,
+        "x": 1380,
+        "y": 1020,
         "wires": [
             [
                 "49e093c9a89b35de"
@@ -1078,8 +1094,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1550,
-        "y": 940,
+        "x": 1570,
+        "y": 1020,
         "wires": []
     },
     {
@@ -1104,8 +1120,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 280,
-        "y": 740,
+        "x": 260,
+        "y": 600,
         "wires": [
             [
                 "b16eccc275aba8c5"
@@ -1126,8 +1142,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 250,
-        "y": 540,
+        "x": 230,
+        "y": 400,
         "wires": [
             [
                 "788fe4f8dbb045e4",
@@ -1149,8 +1165,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 430,
-        "y": 540,
+        "x": 410,
+        "y": 400,
         "wires": []
     },
     {
@@ -1163,12 +1179,12 @@
         "rules": [
             {
                 "t": "hask",
-                "v": "alarm",
+                "v": "lat",
                 "vt": "str"
             },
             {
                 "t": "hask",
-                "v": "changedState",
+                "v": "a",
                 "vt": "str"
             },
             {
@@ -1183,17 +1199,17 @@
         "checkall": "false",
         "repair": false,
         "outputs": 4,
-        "x": 730,
-        "y": 580,
+        "x": 750,
+        "y": 440,
         "wires": [
+            [
+                "c42495022a870b0e"
+            ],
             [
                 "52e7089ac6ca79c6"
             ],
             [
                 "5e30b7931bf25794"
-            ],
-            [
-                "5d5bf64afda0dd2c"
             ],
             [
                 "0e910fdf533b4c40"
@@ -1221,31 +1237,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 580,
+        "x": 400,
+        "y": 440,
         "wires": [
             [
                 "5d8b978c99b84737"
-            ]
-        ]
-    },
-    {
-        "id": "7eab934dedf6fe25",
-        "type": "function",
-        "z": "f9294724958d27a2",
-        "g": "26f32862af1d3322",
-        "name": "insert into db",
-        "func": "\nvar date = new Date().getTime();\nvar satelites = 3;\n\nvar lat = 39.777;\nvar lon = -9.78 ;\nvar alt = 20;\n\n//\"topic\": \"INSERT into gps  (date , time , satelites, lat , lon , alt ) VALUES (1231223144, 1231414234, 3, 38.7 ,-9 ,20 )\"\n//\"topic\": \"INSERT into gps  (date , time, satelites, lat , lon , alt ) VALUES (1231223144, 1231414234, 3, 38.7 ,-9 ,20 )\"\nmsg.topic = `INSERT into gps (date , satelites, lat , lon , alt ) VALUES (${date} , ${satelites} , ${lat} , ${lon} , ${alt} )`\n\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1330,
-        "y": 580,
-        "wires": [
-            [
-                "bf3a2f95bd6b00ff"
             ]
         ]
     },
@@ -1276,29 +1272,10 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 1570,
+        "x": 1510,
         "y": 620,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "5d5bf64afda0dd2c",
-        "type": "function",
-        "z": "f9294724958d27a2",
-        "name": "function 13",
-        "func": "var payload = msg.payload;\nreturn {\n    \"payload\":{\n        \"satelites\": payload.s,\n        \"location\": payload.l,\n    }\n    };\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 930,
-        "y": 580,
-        "wires": [
-            [
-                "c42495022a870b0e"
-            ]
         ]
     },
     {
@@ -1312,7 +1289,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Get all from DB",
+        "label": "Refresh",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -1323,7 +1300,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 280,
-        "y": 1080,
+        "y": 1180,
         "wires": [
             [
                 "3fb127f097597d6c"
@@ -1339,8 +1316,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 970,
-        "y": 920,
+        "x": 990,
+        "y": 980,
         "wires": [
             [
                 "0d9aca903b63d575"
@@ -1359,8 +1336,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
-        "y": 900,
+        "x": 760,
+        "y": 980,
         "wires": [
             [
                 "d094735655d26fd2"
@@ -1375,15 +1352,15 @@
         "group": "8eb2cdda01e36eaf",
         "name": "stateTable",
         "order": 1,
-        "width": "6",
-        "height": "10",
+        "width": "5",
+        "height": "5",
         "format": "<style>\ntable.table-hover tr:hover {\n background:lightblue;\n } \n md-switch {\nposition: center; \nheight: 5px;\n}\nmd-switch .md-thumb {\n background-color: red;\n}\nmd-switch.md-checked .md-thumb {\n background-color: #33CC00;\n}\n\nmd-switch.md-checked .md-bar {\n background-color: lightgreen;\n}\n</style>\n<div class=\"scrollmenu\">\n<table cellpadding=\"1\" border=\"1\" id=\"table-4\" class=\"table-hover\" style=\"width: 100%; border-collapse: collapse; border: 1px solid black\">\n <thead>\n <tr>\n <th title=\"\" bgcolor=gray>Id</th>\n <th title=\"\" bgcolor=gray>Date</th>\n <th title=\"\" bgcolor=gray>State</th>\n  \n </tr>\n </thead>\n <tbody>\n \n <tr ng-repeat=\"row in msg.payload | limitTo:500\">\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.id}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.date}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.state}}</center></td>\n\n </tr>\n \n </tbody>\n</table>\n<script type=\"text/javascript\">\n window.onload = function() {\n document.getElementById(\"editable\").focus();\n };\n\n<script>\n(function($scope) {\n$scope.sendRow = function(obj) {\nvar tableCells = document.getElementById(\"table-4\").rows.item(obj).cells;\nvar cellsData = [];\nfor (var j = 0; j < tableCells.length; j++) {\n cellsData[j] = tableCells.item(j).innerText;\n cellsData[j] = cellsData[j].replace(\",\",\".\"); \n}\n$scope.send({ \"payload\": cellsData });\n};\n})(scope);\n</script>\n\n</div>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 1290,
+        "x": 1310,
         "y": 1200,
         "wires": [
             []
@@ -1398,7 +1375,7 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 930,
+        "x": 950,
         "y": 1200,
         "wires": [
             [
@@ -1418,7 +1395,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
+        "x": 710,
         "y": 1200,
         "wires": [
             [
@@ -1445,7 +1422,7 @@
         "payload": "{   \"f_port\": 1,   \"frm_payload\": \"eyJzYXRlbGl0ZXMiOjYsImxvY2F0aW9uIjogeyJsYXQiOjM4LjcwNDUxMDAwMDAsImxuZyI6LTkuMjAyMjgyMDAwMCwiYWx0Ijo3OC4yMDAwMDAwMDAwfSwiZGF0ZSI6IHsiZGF5IjoyMSwibW9udGgiOjExLCJ5ZWFyIjoyMDIwfSwidGltZSI6IHsiaG91ciI6MjAsIm1pbnV0ZSI6MTQsInNlY29uZCI6NDAsImNlbnRpc2Vjb25kIjo1MH19\",   \"decoded_payload\": {     \"date\": {       \"day\": 21,       \"month\": 11,       \"year\": 2020     },     \"location\": {       \"alt\": 78.2,       \"lat\": 38.70451,       \"lng\": -9.202282     },     \"satelites\": 6,     \"time\": {       \"centisecond\": 50,       \"hour\": 20,       \"minute\": 14,       \"second\": 40     }   },   \"rx_metadata\": [     {       \"gateway_ids\": {         \"gateway_id\": \"test\"       },       \"rssi\": 42,       \"channel_rssi\": 42,       \"snr\": 4.2     }   ],   \"settings\": {     \"data_rate\": {       \"lora\": {         \"bandwidth\": 125000,         \"spreading_factor\": 7       }     }   } }",
         "payloadType": "str",
         "x": 310,
-        "y": 1040,
+        "y": 1100,
         "wires": [
             [
                 "3fb127f097597d6c"
@@ -1466,7 +1443,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 840,
-        "y": 640,
+        "y": 500,
         "wires": []
     },
     {
@@ -1477,16 +1454,16 @@
         "group": "f9ca3aa8684286fd",
         "name": "alarmTable",
         "order": 1,
-        "width": "6",
-        "height": "10",
+        "width": "5",
+        "height": "5",
         "format": "<style>\ntable.table-hover tr:hover {\n background:lightblue;\n } \n md-switch {\nposition: center; \nheight: 5px;\n}\nmd-switch .md-thumb {\n background-color: red;\n}\nmd-switch.md-checked .md-thumb {\n background-color: #33CC00;\n}\n\nmd-switch.md-checked .md-bar {\n background-color: lightgreen;\n}\n</style>\n<div class=\"scrollmenu\">\n<table cellpadding=\"1\" border=\"1\" id=\"table-4\" class=\"table-hover\" style=\"width: 100%; border-collapse: collapse; border: 1px solid black\">\n <thead>\n <tr>\n <th title=\"\" bgcolor=gray>Id</th>\n <th title=\"\" bgcolor=gray>Date</th>\n <th title=\"\" bgcolor=gray>Alarm</th>\n  \n </tr>\n </thead>\n <tbody>\n \n <tr ng-repeat=\"row in msg.payload | limitTo:500\">\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.id}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.date}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.isalarm}}</center></td>\n\n </tr>\n \n </tbody>\n</table>\n<script type=\"text/javascript\">\n window.onload = function() {\n document.getElementById(\"editable\").focus();\n };\n\n<script>\n(function($scope) {\n$scope.sendRow = function(obj) {\nvar tableCells = document.getElementById(\"table-4\").rows.item(obj).cells;\nvar cellsData = [];\nfor (var j = 0; j < tableCells.length; j++) {\n cellsData[j] = tableCells.item(j).innerText;\n cellsData[j] = cellsData[j].replace(\",\",\".\"); \n}\n$scope.send({ \"payload\": cellsData });\n};\n})(scope);\n</script>\n\n</div>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 1270,
-        "y": 1260,
+        "x": 1290,
+        "y": 1320,
         "wires": [
             []
         ]
@@ -1503,8 +1480,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 1260,
+        "x": 710,
+        "y": 1320,
         "wires": [
             [
                 "b5e49121ed87b535"
@@ -1520,8 +1497,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 930,
-        "y": 1260,
+        "x": 950,
+        "y": 1320,
         "wires": [
             [
                 "b33e9704f6284aeb"
@@ -1538,12 +1515,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1270,
-        "y": 280,
+        "x": 1450,
+        "y": 180,
         "wires": []
     },
     {
@@ -1555,7 +1532,7 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 1450,
+        "x": 1410,
         "y": 280,
         "wires": [
             []
@@ -1566,19 +1543,20 @@
         "type": "function",
         "z": "f9294724958d27a2",
         "g": "f7358d121f692cc7",
-        "name": "INSERT into state",
-        "func": "\nvar date = new Date().getTime();\nvar isalarm = msg.payload.alarm;\n\nreturn {\n    \"payload\": state,\n    \"topic\": `INSERT into alarm  (date , isalarm ) VALUES (${date}, ${isalarm} );`\n};",
+        "name": "INSERT into alarm",
+        "func": "\nvar date = new Date().getTime();\nvar isalarm = msg.payload.a;\n\nreturn {\n    \"payload\": isalarm,\n    \"topic\": `INSERT into alarm  (date , isalarm ) VALUES (${date}, ${isalarm} );`\n};",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1290,
+        "x": 1250,
         "y": 240,
         "wires": [
             [
                 "31700a18efcf04d1",
-                "77ab3d82e168e1eb"
+                "77ab3d82e168e1eb",
+                "dba4119a5ae27c75"
             ]
         ]
     },
@@ -1593,21 +1571,22 @@
         "tls": true,
         "name": "",
         "dname": "",
-        "x": 2210,
-        "y": 240,
+        "x": 2130,
+        "y": 160,
         "wires": []
     },
     {
         "id": "13dc4db4d204017a",
         "type": "ui_button",
         "z": "f9294724958d27a2",
+        "d": true,
         "g": "899b493b12ef8f3c",
         "name": "",
         "group": "21940618bc9ff47f",
         "order": 3,
         "width": 0,
         "height": 0,
-        "passthru": false,
+        "passthru": true,
         "label": "sendEmail",
         "tooltip": "",
         "color": "",
@@ -1618,8 +1597,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1910,
-        "y": 240,
+        "x": 1790,
+        "y": 160,
         "wires": [
             [
                 "2f51886ad7147166"
@@ -1640,8 +1619,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2210,
-        "y": 280,
+        "x": 2130,
+        "y": 200,
         "wires": []
     },
     {
@@ -1656,8 +1635,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2060,
-        "y": 240,
+        "x": 1980,
+        "y": 160,
         "wires": [
             [
                 "595b2d343f19283a",
@@ -1677,12 +1656,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1090,
+        "x": 1110,
         "y": 1200,
         "wires": [
             [
                 "8d037d74939aef3c",
-                "be876825f047c744"
+                "be876825f047c744",
+                "7d69e4a2508c2037"
             ]
         ]
     },
@@ -1691,15 +1671,16 @@
         "type": "debug",
         "z": "f9294724958d27a2",
         "g": "58581c304b70dfce",
-        "name": "debug 6",
-        "active": true,
+        "name": "Debug Refresh",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1280,
+        "x": 1320,
         "y": 1160,
         "wires": []
     },
@@ -1715,11 +1696,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1090,
-        "y": 1260,
+        "x": 1110,
+        "y": 1320,
         "wires": [
             [
-                "6e3b3f338ceb61b4"
+                "6e3b3f338ceb61b4",
+                "1948d49c5317c864",
+                "e0eef850401ca5d1"
             ]
         ]
     },
@@ -1735,12 +1718,14 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1150,
-        "y": 920,
+        "x": 1170,
+        "y": 980,
         "wires": [
             [
                 "67ed7611bc4e11c3",
-                "698c4f722e82873d"
+                "698c4f722e82873d",
+                "ed84d32751bf0277",
+                "4d45a70cf395637d"
             ]
         ]
     },
@@ -1774,8 +1759,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1150,
-        "y": 1020,
+        "x": 1170,
+        "y": 1100,
         "wires": [
             [
                 "c4cacbe936455ee0"
@@ -1794,8 +1779,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 1020,
+        "x": 720,
+        "y": 1100,
         "wires": [
             [
                 "717aea70e7deb820"
@@ -1811,8 +1796,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 970,
-        "y": 1020,
+        "x": 990,
+        "y": 1100,
         "wires": [
             [
                 "9475ae36b3cfd1ec"
@@ -1828,10 +1813,13 @@
         "links": [
             "99ac6d9cfa08d594",
             "f62fe2d764467aaf",
-            "af8cc191fb814f2f"
+            "af8cc191fb814f2f",
+            "00562d733cab7fe6",
+            "5da68fe5ac433600",
+            "0653d5122e53973f"
         ],
-        "x": 165,
-        "y": 1060,
+        "x": 185,
+        "y": 1140,
         "wires": [
             [
                 "a586eba9b526be33"
@@ -1848,7 +1836,7 @@
         "links": [
             "ef865f349faec94b"
         ],
-        "x": 1535,
+        "x": 1475,
         "y": 580,
         "wires": []
     },
@@ -1862,8 +1850,8 @@
         "links": [
             "ef865f349faec94b"
         ],
-        "x": 1625,
-        "y": 420,
+        "x": 1565,
+        "y": 400,
         "wires": []
     },
     {
@@ -1876,7 +1864,7 @@
         "links": [
             "ef865f349faec94b"
         ],
-        "x": 1545,
+        "x": 1505,
         "y": 220,
         "wires": []
     },
@@ -1890,12 +1878,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1290,
-        "y": 460,
+        "x": 1470,
+        "y": 480,
         "wires": []
     },
     {
@@ -1908,12 +1896,12 @@
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "State of the app",
+        "label": "Current State",
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
-        "x": 1520,
-        "y": 400,
+        "x": 1450,
+        "y": 380,
         "wires": []
     },
     {
@@ -1925,8 +1913,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 1510,
-        "y": 440,
+        "x": 1450,
+        "y": 420,
         "wires": [
             []
         ]
@@ -1937,20 +1925,244 @@
         "z": "f9294724958d27a2",
         "g": "673ed9df070f6f8b",
         "name": "INSERT into state",
-        "func": "\nvar date = new Date().getTime();\nvar state = msg.payload.changedState ? \"GPS\" : \"Gyro\";\n\nreturn {\n    \"payload\": state,\n    \"topic\": `INSERT into state  (date , state ) VALUES (${date}, \\\"${state}\\\" );`\n};",
+        "func": "\nvar date = new Date().getTime();\nvar state = msg.payload.s ? \"GPS\" : \"Gyro\";\n\nreturn {\n    \"payload\": state,\n    \"topic\": `INSERT into state  (date , state ) VALUES (${date}, \\\"${state}\\\" );`\n};",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1310,
-        "y": 420,
+        "x": 1250,
+        "y": 400,
         "wires": [
             [
                 "951ff97c5974b8c3",
                 "b207b068deae7900",
-                "f62fe2d764467aaf"
+                "f62fe2d764467aaf",
+                "efec1e7ec1208445"
             ]
+        ]
+    },
+    {
+        "id": "d4afbdae6c476064",
+        "type": "ui_button",
+        "z": "f9294724958d27a2",
+        "g": "58581c304b70dfce",
+        "name": "",
+        "group": "c94dd1720a7e2f30",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Refresh",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 280,
+        "y": 1220,
+        "wires": [
+            [
+                "3fb127f097597d6c"
+            ]
+        ]
+    },
+    {
+        "id": "7d69e4a2508c2037",
+        "type": "ui_template",
+        "z": "f9294724958d27a2",
+        "g": "58581c304b70dfce",
+        "group": "4aa4ca6ca286765d",
+        "name": "stateTable",
+        "order": 5,
+        "width": "6",
+        "height": "10",
+        "format": "<style>\ntable.table-hover tr:hover {\n background:lightblue;\n } \n md-switch {\nposition: center; \nheight: 5px;\n}\nmd-switch .md-thumb {\n background-color: red;\n}\nmd-switch.md-checked .md-thumb {\n background-color: #33CC00;\n}\n\nmd-switch.md-checked .md-bar {\n background-color: lightgreen;\n}\n</style>\n<div class=\"scrollmenu\">\n<table cellpadding=\"1\" border=\"1\" id=\"table-4\" class=\"table-hover\" style=\"width: 100%; border-collapse: collapse; border: 1px solid black\">\n <thead>\n <tr>\n <th title=\"\" bgcolor=gray>Id</th>\n <th title=\"\" bgcolor=gray>Date</th>\n <th title=\"\" bgcolor=gray>State</th>\n  \n </tr>\n </thead>\n <tbody>\n \n <tr ng-repeat=\"row in msg.payload | limitTo:500\">\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.id}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.date}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.state}}</center></td>\n\n </tr>\n \n </tbody>\n</table>\n<script type=\"text/javascript\">\n window.onload = function() {\n document.getElementById(\"editable\").focus();\n };\n\n<script>\n(function($scope) {\n$scope.sendRow = function(obj) {\nvar tableCells = document.getElementById(\"table-4\").rows.item(obj).cells;\nvar cellsData = [];\nfor (var j = 0; j < tableCells.length; j++) {\n cellsData[j] = tableCells.item(j).innerText;\n cellsData[j] = cellsData[j].replace(\",\",\".\"); \n}\n$scope.send({ \"payload\": cellsData });\n};\n})(scope);\n</script>\n\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1310,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1948d49c5317c864",
+        "type": "ui_template",
+        "z": "f9294724958d27a2",
+        "g": "58581c304b70dfce",
+        "group": "17753e81d92e804b",
+        "name": "alarmTable",
+        "order": 5,
+        "width": "6",
+        "height": "10",
+        "format": "<style>\ntable.table-hover tr:hover {\n background:lightblue;\n } \n md-switch {\nposition: center; \nheight: 5px;\n}\nmd-switch .md-thumb {\n background-color: red;\n}\nmd-switch.md-checked .md-thumb {\n background-color: #33CC00;\n}\n\nmd-switch.md-checked .md-bar {\n background-color: lightgreen;\n}\n</style>\n<div class=\"scrollmenu\">\n<table cellpadding=\"1\" border=\"1\" id=\"table-4\" class=\"table-hover\" style=\"width: 100%; border-collapse: collapse; border: 1px solid black\">\n <thead>\n <tr>\n <th title=\"\" bgcolor=gray>Id</th>\n <th title=\"\" bgcolor=gray>Date</th>\n <th title=\"\" bgcolor=gray>Alarm</th>\n  \n </tr>\n </thead>\n <tbody>\n \n <tr ng-repeat=\"row in msg.payload | limitTo:500\">\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.id}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.date}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.isalarm}}</center></td>\n\n </tr>\n \n </tbody>\n</table>\n<script type=\"text/javascript\">\n window.onload = function() {\n document.getElementById(\"editable\").focus();\n };\n\n<script>\n(function($scope) {\n$scope.sendRow = function(obj) {\nvar tableCells = document.getElementById(\"table-4\").rows.item(obj).cells;\nvar cellsData = [];\nfor (var j = 0; j < tableCells.length; j++) {\n cellsData[j] = tableCells.item(j).innerText;\n cellsData[j] = cellsData[j].replace(\",\",\".\"); \n}\n$scope.send({ \"payload\": cellsData });\n};\n})(scope);\n</script>\n\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1290,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b666f3e.797cb",
+        "type": "inject",
+        "z": "f9294724958d27a2",
+        "g": "5585ac594366d050",
+        "name": "",
+        "props": [
+            {
+                "p": "text",
+                "v": "This is the Message Text",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1790,
+        "y": 320,
+        "wires": [
+            [
+                "90eae997.db5198"
+            ]
+        ]
+    },
+    {
+        "id": "b234123a.c95f5",
+        "type": "debug",
+        "z": "f9294724958d27a2",
+        "g": "5585ac594366d050",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2110,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "90eae997.db5198",
+        "type": "node-red-contrib-whatsapp-cmb-send-message",
+        "z": "f9294724958d27a2",
+        "g": "5585ac594366d050",
+        "name": "",
+        "account": "80b99021.9a4",
+        "text": "Notfying you that an alert has happened on Node-Red",
+        "inputtypemessage": "str",
+        "rejectssl": true,
+        "x": 1960,
+        "y": 300,
+        "wires": [
+            [
+                "b234123a.c95f5"
+            ]
+        ]
+    },
+    {
+        "id": "e0eef850401ca5d1",
+        "type": "debug",
+        "z": "f9294724958d27a2",
+        "g": "58581c304b70dfce",
+        "name": "Debug Refresh",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "ed84d32751bf0277",
+        "type": "debug",
+        "z": "f9294724958d27a2",
+        "g": "d85e1ed27d2019a8",
+        "name": "Debug Refresh",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "19ec4381c8108349",
+        "type": "ui_button",
+        "z": "f9294724958d27a2",
+        "d": true,
+        "g": "5585ac594366d050",
+        "name": "",
+        "group": "21940618bc9ff47f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "sendWhatssapp",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-male",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 1800,
+        "y": 360,
+        "wires": [
+            [
+                "90eae997.db5198"
+            ]
+        ]
+    },
+    {
+        "id": "4d45a70cf395637d",
+        "type": "ui_template",
+        "z": "f9294724958d27a2",
+        "g": "d85e1ed27d2019a8",
+        "group": "05ea430d20473210",
+        "name": "gpsTable",
+        "order": 5,
+        "width": "6",
+        "height": "10",
+        "format": "<style>\ntable.table-hover tr:hover {\n background:lightblue;\n } \n md-switch {\nposition: center; \nheight: 5px;\n}\nmd-switch .md-thumb {\n background-color: red;\n}\nmd-switch.md-checked .md-thumb {\n background-color: #33CC00;\n}\n\nmd-switch.md-checked .md-bar {\n background-color: lightgreen;\n}\n</style>\n<div class=\"scrollmenu\">\n<table cellpadding=\"1\" border=\"1\" id=\"table-4\" class=\"table-hover\" style=\"width: 100%; border-collapse: collapse; border: 1px solid black\">\n <thead>\n <tr>\n <th title=\"\" bgcolor=gray>Id</th>\n <th title=\"\" bgcolor=gray>Date</th>\n <th title=\"\" bgcolor=gray>Satelites</th>\n <th title=\"\" bgcolor=gray>Longitude</th>\n <th title=\"\" bgcolor=gray>Latitude</th>\n <th title=\"\" bgcolor=gray>Altitude</th>\n  \n </tr>\n </thead>\n <tbody>\n \n <tr ng-repeat=\"row in msg.payload | limitTo:500\">\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.id}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.date}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.satelites}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.lon}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.lat}}</center></td>\n <td contenteditable=\"true\" onclick=\"document.execCommand('selectAll')\"><center>{{row.alt}}</center></td>\n\n </tr>\n \n </tbody>\n</table>\n<script type=\"text/javascript\">\n window.onload = function() {\n document.getElementById(\"editable\").focus();\n };\n\n<script>\n(function($scope) {\n$scope.sendRow = function(obj) {\nvar tableCells = document.getElementById(\"table-4\").rows.item(obj).cells;\nvar cellsData = [];\nfor (var j = 0; j < tableCells.length; j++) {\n cellsData[j] = tableCells.item(j).innerText;\n cellsData[j] = cellsData[j].replace(\",\",\".\"); \n}\n$scope.send({ \"payload\": cellsData });\n};\n})(scope);\n</script>\n\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1380,
+        "y": 940,
+        "wires": [
+            []
         ]
     },
     {
@@ -1971,8 +2183,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 100,
+        "x": 290,
+        "y": 360,
         "wires": [
             [
                 "e61e786e2a23d023"
@@ -1997,8 +2209,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 180,
+        "x": 290,
+        "y": 540,
         "wires": [
             [
                 "ead469c2d5725752"
@@ -2014,11 +2226,12 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 610,
-        "y": 160,
+        "x": 770,
+        "y": 420,
         "wires": [
             [
-                "916ed962a466463b"
+                "916ed962a466463b",
+                "0653d5122e53973f"
             ]
         ]
     },
@@ -2040,8 +2253,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 260,
+        "x": 290,
+        "y": 660,
         "wires": [
             [
                 "5ca79092938ab726"
@@ -2066,8 +2279,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 140,
+        "x": 290,
+        "y": 440,
         "wires": [
             [
                 "47a0f3986ec896d2"
@@ -2092,100 +2305,13 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 220,
+        "x": 290,
+        "y": 580,
         "wires": [
             [
                 "adcc5d28fdfdf376"
             ]
         ]
-    },
-    {
-        "id": "afa10f32099e0e54",
-        "type": "function",
-        "z": "72de9661af2c534c",
-        "g": "c2c2b84629bba374",
-        "name": "function 6",
-        "func": "var downlink = {\n    \"downlinks\": [{\n    \"f_port\": 15,\n    \"frm_payload\": \"vu8=\",\n    \"priority\": \"HIGH\",\n    \"confirmed\": true,\n    \"correlation_ids\": [\"my - correlation - id\"]\n    }]\n}\n\n//var messageString = `{\\\"payload\\\":\\\"${msg.payload}\\\"}`;\nvar messageString = `{\"payload\":\"${msg.payload}\"}`;\nvar messageJson = {\"payload\":msg.payload};\n//var bytes = [];\n//bytes[0] = messageString >> 8;\n//bytes[1] = messageString;\nvar messageBuffer = Buffer.from(messageString, 'utf-8')\nmsg.payload = {\n    \"downlinks\": [{\n        \"f_port\": 1,\n        //\"frm_payload\": Buffer.from(bytes).toString('base64'),\n        \"frm_payload\": Buffer.from(messageBuffer).toString('base64'),\n        \"decoded_payload\": messageJson,\n        \"priority\": \"HIGH\",\n        \"confirmed\": true\n    }]\n}\n\nreturn msg\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 260,
-        "y": 1060,
-        "wires": [
-            [
-                "ac2c61949fe2b733",
-                "ee9067c386c4bfb4"
-            ]
-        ]
-    },
-    {
-        "id": "ac2c61949fe2b733",
-        "type": "mqtt out",
-        "z": "72de9661af2c534c",
-        "g": "c2c2b84629bba374",
-        "name": "",
-        "topic": "v3/lic-lab-2@ttn/devices/eui-a8610a34323b8708/down/replace",
-        "qos": "1",
-        "retain": "true",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "1d039f1066253cac",
-        "x": 610,
-        "y": 1060,
-        "wires": []
-    },
-    {
-        "id": "1ec74bc22b025340",
-        "type": "ui_button",
-        "z": "72de9661af2c534c",
-        "g": "c2c2b84629bba374",
-        "name": "",
-        "group": "93527ec6a0a2d80d",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Send downlink",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "send",
-        "payload": "text",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1100,
-        "y": 960,
-        "wires": [
-            [
-                "67439d10f9905592"
-            ]
-        ]
-    },
-    {
-        "id": "ee9067c386c4bfb4",
-        "type": "debug",
-        "z": "72de9661af2c534c",
-        "g": "c2c2b84629bba374",
-        "name": "downlink_debug",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 1120,
-        "wires": []
     },
     {
         "id": "e61e786e2a23d023",
@@ -2199,8 +2325,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 100,
+        "x": 460,
+        "y": 340,
         "wires": [
             [
                 "1259b65b09ececfb"
@@ -2219,8 +2345,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 140,
+        "x": 480,
+        "y": 420,
         "wires": [
             [
                 "1259b65b09ececfb"
@@ -2233,14 +2359,14 @@
         "z": "72de9661af2c534c",
         "g": "6fbc52b23e464251",
         "name": "INSERT into gps",
-        "func": "\nreturn {\n    \"payload\": msg.payload,\n    \"topic\": \"INSERT into gps  (date , time, satelites, lat , lon , alt ) VALUES (1231223144, 1231414234, 3, 38.7 ,-9 ,20 )\"\n};",
+        "func": "var date = new Date().getTime();\nvar satelites = Math.floor(Math.random() * 10)\nvar lat = 38.7 + Math.random() * 0.02\nvar lon = -9.22 + Math.random() * 0.02\nvar alt = 20 + Math.random() * 0.02\n\nreturn {\n    \"payload\": msg.payload,\n    \"topic\": `INSERT into gps  (date , satelites, lat , lon , alt ) VALUES (${date}, ${satelites}, ${lat} ,${lon} ,${alt} )`\n};\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 180,
+        "x": 470,
+        "y": 520,
         "wires": [
             [
                 "1259b65b09ececfb"
@@ -2259,8 +2385,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 220,
+        "x": 470,
+        "y": 580,
         "wires": [
             [
                 "1259b65b09ececfb"
@@ -2279,8 +2405,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 260,
+        "x": 480,
+        "y": 640,
         "wires": [
             [
                 "1259b65b09ececfb"
@@ -2292,7 +2418,7 @@
         "type": "debug",
         "z": "72de9661af2c534c",
         "g": "6fbc52b23e464251",
-        "name": "debug 3",
+        "name": "Debug GPS table",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -2301,8 +2427,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 220,
+        "x": 870,
+        "y": 480,
         "wires": []
     },
     {
@@ -2310,7 +2436,7 @@
         "type": "debug",
         "z": "72de9661af2c534c",
         "g": "87d4ed4463a9d712",
-        "name": "debug 4",
+        "name": "Debug State table",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -2319,8 +2445,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 620,
-        "y": 460,
+        "x": 1730,
+        "y": 520,
         "wires": []
     },
     {
@@ -2332,11 +2458,12 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 550,
-        "y": 400,
+        "x": 1650,
+        "y": 420,
         "wires": [
             [
-                "0c62d000232819d0"
+                "0c62d000232819d0",
+                "5da68fe5ac433600"
             ]
         ]
     },
@@ -2358,8 +2485,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 440,
+        "x": 1190,
+        "y": 520,
         "wires": [
             [
                 "b83743dbd6216bf4"
@@ -2372,14 +2499,14 @@
         "z": "72de9661af2c534c",
         "g": "87d4ed4463a9d712",
         "name": "INSERT into state",
-        "func": "\nvar date = new Date().getTime();\nvar state = Math.random() > 0.5 ? \"GPS\" : \"GYRO\";\n\nreturn {\n    \"payload\": msg.payload,\n    \"topic\": `INSERT into state  (date , time, state ) VALUES (${date}, ${date}, \\\"${state}\\\" );`\n};",
+        "func": "\nvar date = new Date().getTime();\nvar state = Math.random() > 0.5 ? \"GPS\" : \"GYRO\";\n\nreturn {\n    \"payload\": msg.payload,\n    \"topic\": `INSERT into state  (date , state ) VALUES (${date} , \\\"${state}\\\" );`\n};",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 290,
-        "y": 440,
+        "x": 1370,
+        "y": 500,
         "wires": [
             [
                 "9c65f0dc25547908"
@@ -2398,8 +2525,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 400,
+        "x": 1380,
+        "y": 420,
         "wires": [
             [
                 "9c65f0dc25547908"
@@ -2424,8 +2551,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 400,
+        "x": 1190,
+        "y": 440,
         "wires": [
             [
                 "3e3d197a01dd9d06"
@@ -2444,8 +2571,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 290,
-        "y": 360,
+        "x": 1370,
+        "y": 340,
         "wires": [
             [
                 "9c65f0dc25547908"
@@ -2470,7 +2597,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
+        "x": 1190,
         "y": 360,
         "wires": [
             [
@@ -2490,8 +2617,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 480,
+        "x": 1380,
+        "y": 580,
         "wires": [
             [
                 "9c65f0dc25547908"
@@ -2516,8 +2643,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 480,
+        "x": 1190,
+        "y": 600,
         "wires": [
             [
                 "d1dc758b1bd29772"
@@ -2529,7 +2656,7 @@
         "type": "debug",
         "z": "72de9661af2c534c",
         "g": "55b011c81ead33d6",
-        "name": "debug 5",
+        "name": "Debug Alarm table",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -2538,8 +2665,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 620,
-        "y": 700,
+        "x": 910,
+        "y": 900,
         "wires": []
     },
     {
@@ -2551,11 +2678,12 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 550,
-        "y": 640,
+        "x": 770,
+        "y": 860,
         "wires": [
             [
-                "618e66a9ce354c1d"
+                "618e66a9ce354c1d",
+                "00562d733cab7fe6"
             ]
         ]
     },
@@ -2577,8 +2705,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 680,
+        "x": 290,
+        "y": 960,
         "wires": [
             [
                 "ae0ee0dec6a29137"
@@ -2591,14 +2719,14 @@
         "z": "72de9661af2c534c",
         "g": "55b011c81ead33d6",
         "name": "INSERT into alarm",
-        "func": "\nvar date = new Date().getTime();\nvar isalarm = Math.random() > 0.5;\n\nreturn {\n    \"payload\": msg.payload,\n    \"topic\": `INSERT into alarm  (date , time, isalarm ) VALUES (${date}, ${date}, ${isalarm} );`\n};",
+        "func": "\nvar date = new Date().getTime();\nvar isalarm = Math.random() > 0.5;\n\nreturn {\n    \"payload\": msg.payload,\n    \"topic\": `INSERT into alarm  (date , isalarm ) VALUES (${date}, ${isalarm} );`\n};",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 290,
-        "y": 680,
+        "x": 510,
+        "y": 940,
         "wires": [
             [
                 "020a733cb8b033a9"
@@ -2617,8 +2745,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 640,
+        "x": 520,
+        "y": 860,
         "wires": [
             [
                 "020a733cb8b033a9"
@@ -2643,8 +2771,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 640,
+        "x": 290,
+        "y": 880,
         "wires": [
             [
                 "406df2a63ce53671"
@@ -2663,8 +2791,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 600,
+        "x": 520,
+        "y": 800,
         "wires": [
             [
                 "020a733cb8b033a9"
@@ -2689,8 +2817,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 600,
+        "x": 290,
+        "y": 800,
         "wires": [
             [
                 "51e1dd0908716ec7"
@@ -2709,8 +2837,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 720,
+        "x": 530,
+        "y": 1020,
         "wires": [
             [
                 "020a733cb8b033a9"
@@ -2735,8 +2863,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 720,
+        "x": 290,
+        "y": 1040,
         "wires": [
             [
                 "59b43ecc598e40d6"
@@ -2744,155 +2872,451 @@
         ]
     },
     {
-        "id": "514523b807f94a6a",
-        "type": "ui_text_input",
+        "id": "0824f6ce0ccab1bf",
+        "type": "ui_button",
         "z": "72de9661af2c534c",
-        "g": "c2c2b84629bba374",
+        "g": "55b011c81ead33d6",
         "name": "",
-        "label": "Text for downlink",
+        "group": "17753e81d92e804b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Drop",
         "tooltip": "",
-        "group": "93527ec6a0a2d80d",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 760,
+        "wires": [
+            [
+                "51e1dd0908716ec7"
+            ]
+        ]
+    },
+    {
+        "id": "ced05e70c04f6b3e",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "55b011c81ead33d6",
+        "name": "",
+        "group": "17753e81d92e804b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Create",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 840,
+        "wires": [
+            [
+                "406df2a63ce53671"
+            ]
+        ]
+    },
+    {
+        "id": "9925b7e82281ad2c",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "55b011c81ead33d6",
+        "name": "",
+        "group": "17753e81d92e804b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Insert",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 920,
+        "wires": [
+            [
+                "ae0ee0dec6a29137"
+            ]
+        ]
+    },
+    {
+        "id": "a78e21fe881e1253",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "55b011c81ead33d6",
+        "name": "",
+        "group": "17753e81d92e804b",
         "order": 1,
         "width": 0,
         "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": true,
+        "passthru": false,
+        "label": "Select",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
         "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
         "topicType": "msg",
         "x": 290,
-        "y": 960,
+        "y": 1000,
         "wires": [
             [
-                "544f3bbb0ae4ce0b"
+                "59b43ecc598e40d6"
             ]
         ]
     },
     {
-        "id": "544f3bbb0ae4ce0b",
-        "type": "change",
+        "id": "ccce084c2f2034bb",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "87d4ed4463a9d712",
+        "name": "",
+        "group": "4aa4ca6ca286765d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Select",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 560,
+        "wires": [
+            [
+                "d1dc758b1bd29772"
+            ]
+        ]
+    },
+    {
+        "id": "6d480112e2e5f13e",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "87d4ed4463a9d712",
+        "name": "",
+        "group": "4aa4ca6ca286765d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Insert",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 480,
+        "wires": [
+            [
+                "b83743dbd6216bf4"
+            ]
+        ]
+    },
+    {
+        "id": "880175807ccd2e58",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "87d4ed4463a9d712",
+        "name": "",
+        "group": "4aa4ca6ca286765d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Create",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 400,
+        "wires": [
+            [
+                "3e3d197a01dd9d06"
+            ]
+        ]
+    },
+    {
+        "id": "8d2f504e9915ce2e",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "87d4ed4463a9d712",
+        "name": "",
+        "group": "4aa4ca6ca286765d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Drop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 320,
+        "wires": [
+            [
+                "6e98a4b86b0d5135"
+            ]
+        ]
+    },
+    {
+        "id": "48ed45d8c134179f",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "6fbc52b23e464251",
+        "name": "",
+        "group": "05ea430d20473210",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Select",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 620,
+        "wires": [
+            [
+                "5ca79092938ab726"
+            ]
+        ]
+    },
+    {
+        "id": "8e92c69aa56ff3cf",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "6fbc52b23e464251",
+        "name": "",
+        "group": "05ea430d20473210",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Insert",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "ead469c2d5725752"
+            ]
+        ]
+    },
+    {
+        "id": "2092c76362a5557d",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "6fbc52b23e464251",
+        "name": "",
+        "group": "05ea430d20473210",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Create",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 400,
+        "wires": [
+            [
+                "47a0f3986ec896d2"
+            ]
+        ]
+    },
+    {
+        "id": "acfd73a050d315fb",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "6fbc52b23e464251",
+        "name": "",
+        "group": "05ea430d20473210",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Drop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "e61e786e2a23d023"
+            ]
+        ]
+    },
+    {
+        "id": "00562d733cab7fe6",
+        "type": "link out",
+        "z": "72de9661af2c534c",
+        "g": "55b011c81ead33d6",
+        "name": "selectDbs_in",
+        "mode": "link",
+        "links": [
+            "ef865f349faec94b"
+        ],
+        "x": 885,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "5da68fe5ac433600",
+        "type": "link out",
+        "z": "72de9661af2c534c",
+        "g": "87d4ed4463a9d712",
+        "name": "selectDbs_in",
+        "mode": "link",
+        "links": [
+            "ef865f349faec94b"
+        ],
+        "x": 1765,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "0653d5122e53973f",
+        "type": "link out",
+        "z": "72de9661af2c534c",
+        "g": "6fbc52b23e464251",
+        "name": "selectDbs_in",
+        "mode": "link",
+        "links": [
+            "ef865f349faec94b"
+        ],
+        "x": 875,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "afa10f32099e0e54",
+        "type": "function",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "function 6",
+        "func": "\n//var messageString = `{\\\"payload\\\":\\\"${msg.payload}\\\"}`;\nvar messageString = `{\"payload\":\"${msg.payload}\"}`;\nvar messageJson = msg.payload;\n//var bytes = [];\n//bytes[0] = messageString >> 8;\n//bytes[1] = messageString;\nvar messageBuffer = Buffer.from(messageJson, 'utf-8')\nmsg.payload = {\n    \"downlinks\": [{\n        \"f_port\": 1,\n        //\"frm_payload\": Buffer.from(bytes).toString('base64'),\n        \"frm_payload\": Buffer.from(messageBuffer).toString('base64'),\n        \"decoded_payload\": messageJson,\n        \"priority\": \"HIGH\",\n        \"confirmed\": true\n    }]\n}\n\nreturn msg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 840,
+        "wires": [
+            [
+                "ac2c61949fe2b733",
+                "ee9067c386c4bfb4"
+            ]
+        ]
+    },
+    {
+        "id": "ac2c61949fe2b733",
+        "type": "mqtt out",
         "z": "72de9661af2c534c",
         "g": "c2c2b84629bba374",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "textInput",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 510,
-        "y": 960,
-        "wires": [
-            [
-                "593888a23a3bb561"
-            ]
-        ]
+        "topic": "v3/lic-lab-2@ttn/devices/eui-a8610a34323b8708/down/replace",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1d039f1066253cac",
+        "x": 1590,
+        "y": 840,
+        "wires": []
     },
     {
-        "id": "593888a23a3bb561",
-        "type": "switch",
-        "z": "72de9661af2c534c",
-        "name": "is text empty?",
-        "property": "textInput",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "empty"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 740,
-        "y": 960,
-        "wires": [
-            [
-                "a0f6c9ebf672a652"
-            ],
-            [
-                "9bb43063c1a5db65"
-            ]
-        ]
-    },
-    {
-        "id": "a0f6c9ebf672a652",
-        "type": "change",
-        "z": "72de9661af2c534c",
-        "name": "enabled false",
-        "rules": [
-            {
-                "t": "set",
-                "p": "enabled",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 910,
-        "y": 940,
-        "wires": [
-            [
-                "1ec74bc22b025340"
-            ]
-        ]
-    },
-    {
-        "id": "9bb43063c1a5db65",
-        "type": "change",
-        "z": "72de9661af2c534c",
-        "name": "enabled true",
-        "rules": [
-            {
-                "t": "set",
-                "p": "enabled",
-                "pt": "msg",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 910,
-        "y": 980,
-        "wires": [
-            [
-                "1ec74bc22b025340"
-            ]
-        ]
-    },
-    {
-        "id": "67439d10f9905592",
-        "type": "link out",
+        "id": "ee9067c386c4bfb4",
+        "type": "debug",
         "z": "72de9661af2c534c",
         "g": "c2c2b84629bba374",
-        "name": "send downlink",
-        "mode": "link",
-        "links": [
-            "bb5349a0303645fc"
-        ],
-        "x": 1215,
-        "y": 960,
+        "name": "downlink_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1440,
+        "y": 900,
         "wires": []
     },
     {
@@ -2902,14 +3326,127 @@
         "g": "c2c2b84629bba374",
         "name": "",
         "links": [
-            "67439d10f9905592"
+            "67439d10f9905592",
+            "093c498702d896ce"
         ],
-        "x": 165,
-        "y": 1060,
+        "x": 1145,
+        "y": 840,
         "wires": [
             [
                 "afa10f32099e0e54"
             ]
         ]
+    },
+    {
+        "id": "1d85c22485aac01b",
+        "type": "function",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "function 18",
+        "func": "msg.payload = \"state=1\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 960,
+        "wires": [
+            [
+                "093c498702d896ce"
+            ]
+        ]
+    },
+    {
+        "id": "befbae933a1eca5c",
+        "type": "function",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "function 19",
+        "func": "msg.payload = \"state=0\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 1020,
+        "wires": [
+            [
+                "093c498702d896ce"
+            ]
+        ]
+    },
+    {
+        "id": "d1e2a501e6128df9",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "",
+        "group": "93527ec6a0a2d80d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Set state to gyro",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "orange",
+        "className": "",
+        "icon": "send",
+        "payload": "text",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1230,
+        "y": 1020,
+        "wires": [
+            [
+                "befbae933a1eca5c"
+            ]
+        ]
+    },
+    {
+        "id": "106bc7eeced7d3f1",
+        "type": "ui_button",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "",
+        "group": "93527ec6a0a2d80d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Set state to gps",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "send",
+        "payload": "text",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1230,
+        "y": 960,
+        "wires": [
+            [
+                "1d85c22485aac01b"
+            ]
+        ]
+    },
+    {
+        "id": "093c498702d896ce",
+        "type": "link out",
+        "z": "72de9661af2c534c",
+        "g": "c2c2b84629bba374",
+        "name": "send downlink",
+        "mode": "link",
+        "links": [
+            "bb5349a0303645fc"
+        ],
+        "x": 1565,
+        "y": 1000,
+        "wires": []
     }
 ]
