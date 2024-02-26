@@ -7,6 +7,9 @@ A node-red backend for a car tracking iot project.
 * Scientific [poster](https://github.com/JoaoAlmeida-dev/CarTracker_IOT/blob/main/Security%20tracker%20for%20cars-poster.pdf) created to display the project;
 * Pdf [presentation](https://github.com/JoaoAlmeida-dev/CarTracker_IOT/blob/main/Security%20tracker%20for%20cars.pdf).
 
+## Skills
+Internet of Things (IoT) · Arduino · C · Node-RED · Global Positioning System (GPS) · Lora-Wan
+
 ## About
 This project was meant to serve as a protection and data-gathering device for a personal car.
 It achieves this by using two different operational modes that the user switches manually with the press of a button
@@ -25,8 +28,3 @@ The device activates its gyroscopic sensor to detect any sudden movement, upon w
 
 ## The device
 ![CarTracking-IOT](https://github.com/JoaoAlmeida-dev/CarTracker_IOT/assets/24848457/6bc2c43f-a4fc-49a4-802a-b7e804f16241)
-
-
-
-## Skills
-Internet of Things (IoT) · Arduino · C · Node-RED · Global Positioning System (GPS) · Lora-Wan
